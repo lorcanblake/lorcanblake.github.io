@@ -1,3 +1,3 @@
-# @Lorcan Blake
+## Lorcan makes things
 
-I'm learning the things
+[Teenynotes](http://lorcanblake.github.io) is my latest child
