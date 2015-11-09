@@ -26,13 +26,18 @@ div{color:rgba(0,0,0,0.8);
     max-width:740px;
     font-size:24px;
     word-wrap: break-word;
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
     }
 div:focus,h1:focus{outline:0;}
 h1,h3{font-weight:normal;}
 a{color:#08c}
+@media screen and (min-width: 480px) {
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+}
 </style>
 
 </head>
