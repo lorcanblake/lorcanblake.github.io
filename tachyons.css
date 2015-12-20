@@ -29,12 +29,8 @@
 }
 
 .purple { color: #303; }
-
 .focus-purple:focus { color: #303; }
-
 .hover-purple:hover { color: #980bc6; }
-
-.sw-4 { stroke-width: 4; }
 .stroke-purple { stroke: #303; }
 
 .measure  {
