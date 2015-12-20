@@ -1,0 +1,43 @@
+*{font-size: 105%;}
+
+::selection {
+  background: #f0ecf0;
+}::-moz-selection {
+  background: #f0ecf0;
+}  
+
+.b--purple { border-color: #303; }
+
+.sans-serif {
+  font-family:  'Vollkorn',
+                helvetica, 'helvetica neue',
+                arial,
+                sans-serif;
+}
+
+.serif {
+  font-family: 'Vollkorn',
+               times, TimesNewRoman, "Times New Roman",
+               georgia,
+               serif;
+}
+
+.link {
+  text-decoration: none;
+  border-bottom: 3px solid #303;
+  transition: color .15s ease-in;
+}
+
+.purple { color: #303; }
+
+.focus-purple:focus { color: #303; }
+
+.hover-purple:hover { color: #980bc6; }
+
+.sw-4 { stroke-width: 4; }
+.stroke-purple { stroke: #303; }
+
+.measure  {
+  width: 100%;
+  max-width: 35em;
+}
