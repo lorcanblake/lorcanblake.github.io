@@ -1,3 +1,5 @@
+*{font-size: 105%;}
+
 ::selection {
   background: #f0ecf0;
 }::-moz-selection {
