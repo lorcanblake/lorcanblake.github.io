@@ -1,4 +1,4 @@
-*{font-size: 105%;}
+*{font-size: 110%;}
 
 ::selection {
   background: #f0ecf0;
@@ -9,7 +9,7 @@
 .b--purple { border-color: #303; }
 
 .sans-serif {
-  font-family:  'Vollkorn',
+  font-family:  'Vollkorn',  /* I know I know */
                 helvetica, 'helvetica neue',
                 arial,
                 sans-serif;
@@ -17,7 +17,6 @@
 
 .serif {
   font-family: 'Vollkorn',
-               times, TimesNewRoman, "Times New Roman",
                georgia,
                serif;
 }
@@ -33,7 +32,8 @@
 .hover-purple:hover { color: #980bc6; }
 .stroke-purple { stroke: #303; }
 
+/*
 .measure  {
-  width: 100%;
   max-width: 35em;
 }
+*/
