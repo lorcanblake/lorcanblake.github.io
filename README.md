@@ -1,3 +1,3 @@
-## Lorcan makes things
+## Lorcan makes things for the web
 
-[Demo 4 real](http://lorcanblake.github.io)
+[See proof](http://lorcanblake.github.io)
