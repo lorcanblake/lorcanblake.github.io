@@ -1,38 +1,30 @@
-* { font-size: 105%;}
 ::selection {
-  background: #f0ecf0;
-}::-moz-selection {
-  background: #f0ecf0;
-}  
-
-.b--purple { border-color: #303; }
-
+    background: #f0ecf0;
+}
+::-moz-selection {
+    background: #f0ecf0;
+}
+.b--purple {
+    border-color: #303;
+}
 .sans-serif {
-  font-family:  'Vollkorn',  /* I know I know */
-                helvetica, 'helvetica neue',
-                arial,
-                sans-serif;
+    font-family: 'Cabin', sans-serif;
 }
-
 .serif {
-  font-family: 'Vollkorn',
-               georgia,
-               serif;
+    font-family: 'Vollkorn', georgia, serif;
 }
-
 .link {
-  text-decoration: none;
-  border-bottom: 3px solid #303;
-  transition: color .15s ease-in;
+    text-decoration: none;
+    border-bottom: 3px solid #303;
+    transition: color .15s ease-in;
 }
-
-.purple { color: #303; }
-.focus-purple:focus { color: #303; }
-.hover-purple:hover { color: #980bc6; }
-.stroke-purple { stroke: #303; }
-
-/*
-.measure  {
-  max-width: 35em;
+.purple,
+.focus-purple:focus {
+    color: #303;
 }
-*/
+.hover-purple:hover {
+    color: #980bc6;
+}
+.stroke-purple {
+    stroke: #303;
+}
