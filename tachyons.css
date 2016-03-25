@@ -5,25 +5,25 @@
     background: #f0ecf0;
 }
 .b--purple {
-    border-color: #303;
+    border-color: #111;
 }
 .sans-serif {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .serif {
     font-family: 'Vollkorn', georgia, serif;
 }
 .link {
     text-decoration: none;
-    border-bottom: 3px solid #303;
+    border-bottom: 3px solid #111;
     transition: color .15s ease-in;
 }
 .purple,
 .focus-purple:focus {
-    color: #303;
+    color: #111;
 }
 .hover-purple:hover {
-    color: #980bc6;
+    color: #222;
 }
 .stroke-purple {
     stroke: #303;
