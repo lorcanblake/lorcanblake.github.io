@@ -1,8 +1,8 @@
 ::selection {
-    background: #f0ecf0;
+    background: #FFFAC2;
 }
 ::-moz-selection {
-    background: #f0ecf0;
+    background: #FFFAC2;
 }
 .b--purple {
     border-color: #111;
@@ -26,5 +26,5 @@
     color: #222;
 }
 .stroke-purple {
-    stroke: #303;
+    stroke: #111;
 }
