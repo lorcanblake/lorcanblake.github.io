@@ -34,3 +34,8 @@
 .stroke-purple {
     stroke: #111;
 }
+@media screen and (min-width: 60em){
+.mega-l {
+    font-size: 6rem;
+}
+}
