@@ -1,6 +1,9 @@
 .f3-ns {
     font-size: 1.45em;
 }
+.f4-ns {
+    font-size: 1.05rem;
+}
 ::selection {
     background: #FFFAC2;
 }
