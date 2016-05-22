@@ -39,3 +39,9 @@
     font-size: 6rem;
 }
 }
+
+@media screen and (max-width: 60em) and (min-width: 30em){
+.f1-m {
+    font-size: 3rem;
+}
+}
