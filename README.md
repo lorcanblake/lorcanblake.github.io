@@ -1,3 +1,5 @@
-## Lorcan makes things for the web
+## Lorcan design and builds clear, easy-to-use websites
 
-[See proof](http://lorcanblake.github.io)
+He does other things too.
+
+[View site](http://lorcanblake.github.io)
