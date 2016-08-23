@@ -12,6 +12,7 @@
 .f4-ns {
     /* font-size: 1.05rem; */
     font-size: 3.05rem;
+    cursor:pointer;
 }
 ::selection {
     background: #FFFAC2;
