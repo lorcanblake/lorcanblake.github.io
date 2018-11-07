@@ -1,188 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
-  <title>Lorcan Blake | UX research and UI design</title>
-  <meta name="description" content="My job is to organise information so that it is conducive to human behaviour">
-  <meta name="author" content="Lorcan Blake">
+<title>Lorcan Blake | UX research and UI design</title>
+<meta name="description" content="My job is to organise information so that it is conducive to human behaviour">
+<meta name="author" content="Lorcan Blake">
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-  <link rel="apple-touch-icon" href="favicon.png">
-  <meta name="theme-color" content="#222222">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta name="theme-color" content="#222222">
 
-  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+<!-- <link rel="stylesheet" href="tachyons.min.css"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700">
 
+<style>
+  /* Overrides and Custom Utilities */
 
-  <style>
-    /* Overrides and Custom Utilities */
+  /* browser */
+  ::selection{ background:#222; color:#fff; } ::-moz-selection{ background:#222; color:#fff; }
 
-    /* browser */
+  /* animation */
+  .fade{-webkit-animation:fadein 1s;-moz-animation:fadein 1s;-ms-animation:fadein 1s;-o-animation:fadein 1s;animation:fadein 1s}@keyframes fadein{from{opacity:0}to{opacity:1}}@-moz-keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}@-ms-keyframes fadein{from{opacity:0}to{opacity:1}}@-o-keyframes fadein{from{opacity:0}to{opacity:1}}
+  .rotate{ -webkit-transition: -webkit-transform .8s ease-in-out; transition: transform .8s ease-in-out; }
+  .rotate:hover { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 
-    ::selection {
-      background: #222;
-      color: #fff;
-    }
+  /* color */
+  .blue, .hover-blue:focus, .hover-blue:hover { color: #0000ff; }
+  .bg-blue { background-color: #0000ff; }
+  .b--blue { border-color: #0000ff; }
 
-    ::-moz-selection {
-      background: #222;
-      color: #fff;
-    }
+  /* .bg-taupe { background-color: #c7d4be96; } */
+  .bg-yellow { background-color: #FFC107; }
 
-    /* animation */
+  /* typography */
+  .serif { font-family: 'Merriweather', 'Georgia', 'times', serif; }
+  .trl{ text-rendering: optimizeLegibility; }
 
-    .fade {
-      -webkit-animation: fadein 1s;
-      -moz-animation: fadein 1s;
-      -ms-animation: fadein 1s;
-      -o-animation: fadein 1s;
-      animation: fadein 1s
-    }
+  /* buttons */
+  .bb--w2{
+    border-bottom: 2px solid;
+  }
+  
+  /* whitespace */
+  @media screen and (min-width: 60em){
+    .min-vh-25-l { min-height: 25vh; }
+  }
+</style>
 
-    @keyframes fadein {
-      from {
-        opacity: 0
-      }
-      to {
-        opacity: 1
-      }
-    }
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92779594-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-92779594-1');</script>
 
-    @-moz-keyframes fadein {
-      from {
-        opacity: 0
-      }
-      to {
-        opacity: 1
-      }
-    }
-
-    @-webkit-keyframes fadein {
-      from {
-        opacity: 0
-      }
-      to {
-        opacity: 1
-      }
-    }
-
-    @-ms-keyframes fadein {
-      from {
-        opacity: 0
-      }
-      to {
-        opacity: 1
-      }
-    }
-
-    @-o-keyframes fadein {
-      from {
-        opacity: 0
-      }
-      to {
-        opacity: 1
-      }
-    }
-
-    /* color */
-
-    .bg-yellow {
-      background-color: #ffd200;
-    }
-
-    /* typography */
-
-    .trl {
-      text-rendering: optimizeLegibility;
-    }
-
-    .monospace {
-      font-family: 'Roboto Mono', monospace;
-    }
-
-    /* buttons */
-
-    .bb--w2 {
-      border-bottom: 2px solid;
-    }
-  </style>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92779594-1"></script>
-  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date()); gtag('config', 'UA-92779594-1');</script>
 </head>
 
-<body class="fade w-100 monospace trl bg-yellow black-80">
-  <article class="vh-100 dt w-100">
-    <div class="dtc v-mid ph3 ph4-l">
-      <!-- <div class="center w2 h3 bl bb bw3 f-headline pa2" style="
-    padding-top: .2rem;
-">B</div> -->
-      <div class="pa2 pa3-m pa4-l">
-        <div class="overflow-auto">
-          <table class="f7 f6-ns w-100 center" cellspacing="0">
-            <thead>
-              <tr>
-                <th class="fw6 ba bl-0 bt-0 br-0 b--dotted b--black-30 tl pb3 pr3">Project</th>
-                <th class="fw6 ba bl-0 bt-0 br-0 b--dotted b--black-30 tl pb3 pr3">Deliverables</th>
-                <th class="fw6 ba bl-0 bt-0 br-0 b--dotted b--black-30 tl pb3 pr3">Year</th>
-              </tr>
-            </thead>
-            <tbody class="lh-copy">
-              <tr>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                  <a class="black-90" href="/fyp/5ervice" target="_blank" rel="noopener noreferrer">5ervice</a>
-                </td>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">Platform design, branding and front-end interactive prototypes
-                </td>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">2018</td>
-              </tr>
-              <tr>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                  <a class="black-90" href="/cu" target="_blank" rel="noopener noreferrer">Cahir Credit Union</a>
-                </td>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">Microsite, photography and copy</td>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">2017</td>
-              </tr>
-              <tr>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                  <a class="black-90" href="https://www.behance.net/gallery/34415263/Rory-Gallagher-(A-Short-Introduction)-Website"
-                    target="_blank" rel="noopener noreferrer">Rory Gallagher</a>
-                </td>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">Microsite</td>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">2016</td>
-              </tr>
-              <tr>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                  <a class="black-90" href="https://github.com/lorcanblake/RMP1-BriefII-Pointillist" target="_blank" rel="noopener noreferrer">Pointillist.py</a>
-                </td>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">Live-capture interactive installation</td>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">2016</td>
-              </tr>
-              <tr>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                  <a class="black-90" href="/notes.html" target="_blank" rel="noopener noreferrer">Browser Notepad</a>
-                </td>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">App</td>
-                <td class="pv3 pr3 ba bl-0 bt-0 br-0 b--dotted b--black-30">2016</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+<body class="fade w-100 serif trl bg-white">
 
-      <div class="mt3 pa2 pa4-ns cf tl tc-ns f7 f5-m f6-l">
-        <!--<a class="link dim br2 ba bb--w2 ph3 pv2 mb2 dib black" href="mailto:lorcanblake@hotmail.com">Email</a>-->
-        <a class="link dim br2 ba bb--w2 ph3 pv2 mb2 dib black" href="https://www.are.na/lorcan-blake" target="_blank" rel="noopener noreferrer">Are.na</a>
-        <a class="link dim br2 ba bb--w2 ph3 pv2 mb2 dib black" href="https://www.github.com/lorcanblake" target="_blank" rel="noopener noreferrer">Github</a>
-        <a class="link dim br2 ba bb--w2 ph3 pv2 mb2 dib black" href="https://www.behance.net/lorcanblake" target="_blank" rel="noopener noreferrer">Behance</a>
-      </div>
-  </article>
+<header class="bg-yellow pa3 pa5-ns min-vh-25-l">
+  <p class="f4 f3-l lh-copy measure-narrow">
+	Delivering research, interfaces and interactive code prototypes.
+  </p>
+</header>
+
+<main class="bg-white ph3 ph5-ns pv4 pv5-ns bt b--black-10">
+  <div class="w-100 dib">
+    <!-- <nav class="mt0 mb4 lh-copy fw1 f6 f5-ns overflow-auto nowrap">
+        <a class="black link hover-blue dib mr3 mb3 fw7" href="/" title="Home">Home</a>
+        <a class="black link hover-blue dib mr3 mb3 fw7" href="/process" title="Process">Process</a>
+        <a class="black link hover-blue dib mr3 mb3 fw7" href="/work" title="Work">Work</a>
+        <a class="black link hover-blue dib mr3 mb3 fw7" href="/reading" title="Reading">Reading</a>
+        <a class="black link hover-blue dib mr3 mb3 fw7" href="/contact" title="Contact">Contact</a>
+    </nav> -->
+    <div class="mt2">
+      <a class="f6 f5-ns link dim br2 ba bb--w2 ph3 pv2 mb2 dib black" href="mailto:lorcanblake@hotmail.com">Email</a>
+      <a class="f6 f5-ns link dim br2 ba bb--w2 ph3 pv2 mb2 dib black" href="https://www.are.na/lorcan-blake" target="_blank" rel="noopener noreferrer">Are.na</a>
+      <a class="f6 f5-ns link dim br2 ba bb--w2 ph3 pv2 mb2 dib black" href="https://www.behance.net/lorcanblake" target="_blank" rel="noopener noreferrer">Behance</a>
+    </div>
+    <!-- <p class="f6 f5-ns measure copy lh-copy">
+      -
+      -
+      -
+      -
+    </p> -->
+    <small class="f6 f5-ns measure db lh-copy mt3">
+      A  <a class="black link hover-blue" href="http://www.lit.ie/Courses/LC517/default.aspx" target="_blank" rel="noopener noreferrer">creative multimedia</a> student, I'm currently undertaking my final year project, entitled:
+
+      <blockquote class="ml0 pl4 i">
+        Leveraging user-centric design to create a localised 
+        open innovation ecosystem in Ireland. 
+      </blockquote>
+      
+      Deliverables include: UX research, UI prototypes and a front-end design system.
+    </small>
+    <span class="db f7 f6-ns measure mt4 code">Updated: Wed, 07 Nov 2018 09:14:42</span>
+  </div>
+  </main>
+
 </body>
-
 </html>
