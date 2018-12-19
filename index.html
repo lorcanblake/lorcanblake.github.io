@@ -1,392 +1,191 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LORCAN - Articles | Feature</title>
+    <title>Lorcan Blake | UX research and UI design</title>
     <meta
       name="description"
-      content="Personal site of the one and only LORCAN BLAKE mf!!"
+      content="My job is to organise information and create resultant tools and resources that are conducive to human behaviour"
     />
+    <meta name="author" content="Lorcan Blake" />
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="author" content="@lorcna" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="tachyons.min.css" />
 
-    <!-- are.na as cms -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <meta name="theme-color" content="#222222" />
 
     <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="RSS Feed"
-      href=""
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Archivo"
       rel="stylesheet"
+      href="https://unpkg.com/tachyons/css/tachyons.min.css"
     />
+    <!-- <link rel="stylesheet" href="tachyons.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Archivo:400,400i,700"
+    />
+
     <style>
-      .bg-white {
-        background-color: #fbf9f9;
+      /* Overrides and Custom Utilities */
+
+      /* browser */
+      ::selection {
+        background: #222;
+        color: #fff;
+      }
+      ::-moz-selection {
+        background: #222;
+        color: #fff;
       }
 
-      .bg-brurple {
-        background-color: #daced9;
+      /* animation */
+      .fade {
+        -webkit-animation: fadein 1s;
+        -moz-animation: fadein 1s;
+        -ms-animation: fadein 1s;
+        -o-animation: fadein 1s;
+        animation: fadein 1s;
+      }
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @-moz-keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @-ms-keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @-o-keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .rotate {
+        -webkit-transition: -webkit-transform 0.8s ease-in-out;
+        transition: transform 0.8s ease-in-out;
+      }
+      .rotate:hover {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
       }
 
-      .bg-greige {
-        background-color: #d0dace;
+      /* color */
+      .blue,
+      .hover-blue:focus,
+      .hover-blue:hover {
+        color: #0000ff;
+      }
+      .bg-blue {
+        background-color: #0000ff;
+      }
+      .b--blue {
+        border-color: #0000ff;
       }
 
-      .sans-serif {
-        font-family: "Archivo";
+      /* .bg-taupe { background-color: #c7d4be96; } */
+      .bg-yellow {
+        background-color: #ffc107;
       }
 
-      .monospace {
-        font-family: monospace;
+      /* typography */
+      .ff {
+        font-family: "Archivo", "Merriweather", "Georgia", "times", serif;
+      }
+      .trl {
+        text-rendering: optimizeLegibility;
+      }
+
+      /* buttons */
+      .bb--w2 {
+        border-bottom: 2px solid;
+      }
+
+      /* whitespace */
+      @media screen and (min-width: 60em) {
+        .min-vh-25-l {
+          min-height: 25vh;
+        }
       }
     </style>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-92779594-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-92779594-1");
+    </script>
   </head>
 
-  <body class="w-100 sans-serif bg-white">
-    <!--
-      <header class="bg-light-yellow fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
-
-        <nav class="serif f6 fw6 ttc tracked tr">
-
-
-          <a class="link dim black dib mr3" href="#" title="Home">Home</a>
-
-
-          <a class="link dim black dib mr3" href="#" title="About">About</a>
-
-
-          <a class="link dim black dib mr3" href="#" title="Store">Store</a>
-
-
-          <a class="link dim black dib" href="#" title="Contact">Contact</a>
-
-
-        </nav>
-
-
-      </header>
-    -->
-
-    <nav
-      class="bg-dark-red fixed serif db dt-l w-100 border-box pa3 ph5-l"
-    >
-      <section class="mw7 center">
-        <a
-          class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l monospace fw3"
-          href="#"
-          alt="@lorcna"
-        >
-         
-            <img src="logo.png" class="dib w2 h2 br-100 v-mid" title="@lorcna" alt="@lorcna">
-       
-        </a>
-        <div class="db dtc-l v-mid w-100 w-30-l tc tr-l serif f6 fw1 ttu">
-          <a
-            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
-            href="#"
-            title="Home"
-            >About</a
-          >
-          <a
-            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
-            href="#"
-            title="How it Works"
-            >Work</a
-          >
-          <a
-            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
-            href="#"
-            title="Blog"
-            >Play</a
-          >
-          <a class="link dim dark-gray f6 f5-l dib" href="#" title="Contact"
-            >Notes</a
-          >
-        </div>
-      </section>
-    </nav>
-
+  <body class="w-100 vh-100 ff trl bg-white min-vh-25-l">
     <main>
       <div data-name="component">
-        <article class="">
-          <div
-            class="vh-100 dt w-100 tc bg-white black cover"
-            style="/* background:url(http://mrmrs.github.io/photos/u/009.jpg) no-repeat center; */"
-          >
-            <div class="dtc v-mid">
-              <header class="dn db-ns">
-                <h2 class="f6 fw1 ttu tracked mb2 lh-title">Latest Work</h2>
-                <h3 class="f6 fw1 lh-title">UX research, interactive UI prototypes &amp; front-end design system
-                    </h3>
-              </header>
-              <!-- <h1 class="f1 f-headline-l fw9 i black">Lorcan Blake</h1> -->
-
-              <div class="pa4 center">
-                <blockquote class="mt0 black-90 ba br2 center mw7 pv3">
-                  <!--
-                    <p class="f5 f4-m f3-l lh-copy measure mt0 mb4 center">
-                      Front-end developer interested in design theory. Proponent
-
-                      of functional CSS and prototyping in code. My final year
-
-                      project is centred on social tendering for local services.
-
-                      Deliverables include: UX research, front-end design system
-
-                      and interactive UI prototypes. Spunky, naturally.
-
-                    </p>
-                  -->
-                  <h1 class="f1 f-subheadline-l f-subheadline-m fw1">
-                    Hyperlocal Open Innovation Platform
-                  </h1>
-                  <a
-                    class="f6 ttu tracked serif i ph2 measure center pv3 ba bg-white ma4 mr0 black link grow"
-                    href="#"
-                    >View project</a
-                  >
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <article
-            class="pa3 pa5-ns ph3-ns measure-wide center"
-            data-name="slab-stat-small"
-          >
-            <h3 class="f6 ttu tracked">Today</h3>
-            <div class="cf">
-              <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
-                <dd class="f6 fw4 ml0">Closed Issues</dd>
-                <dd class="f3 fw6 ml0">1,024</dd>
-              </dl>
-              <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
-                <dd class="f6 fw4 ml0">Open Issues</dd>
-                <dd class="f3 fw6 ml0">993</dd>
-              </dl>
-              <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
-                <dd class="f6 fw4 ml0">Next Release</dd>
-                <dd class="f3 fw6 ml0">10-22</dd>
-              </dl>
-              <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
-                <dd class="f6 fw4 ml0">Days Left</dd>
-                <dd class="f3 fw6 ml0">4</dd>
-              </dl>
-              <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
-                <dd class="f6 fw4 ml0">Favorite Cat</dd>
-                <dd class="f3 fw6 ml0">All of Them</dd>
-              </dl>
-              <dl class="fl fn-l w-50 dib-l w-auto-l lh-title">
-                <dd class="f6 fw4 ml0">App Downloads</dd>
-                <dd class="f3 fw6 ml0">1,200</dd>
-              </dl>
+        <section class="tc pa3 pa6-ns">
+          <article class="hide-child relative bn b--black-30 mw5 center">
+            <img
+              alt="Photo of Lorcan Blake"
+              src="https://instagram.fdub5-1.fna.fbcdn.net/vp/fd59d5299f7f976ff0dc5b16b14349d7/5C95068E/t51.2885-15/e35/23507873_125759124762593_6118152179820789760_n.jpg?_nc_ht=instagram.fdub5-1.fna.fbcdn.net" target="_blank"
+              class="db br-pill w4 center rotate"
+            />
+            <div class="mt4 pa2 ba b--black-80">
+              <a href="#" class="f6 db link black fw5">Lorcan Blake</a>
+              <p class="f6 black-70 ma2">
+                Final year @ LSAD LIT. Delivering product research, interfaces and interactive code prototypes.
+              </p>
+              <a
+                href="https://are.na/lorcan-blake"
+                class="link tc ph3 pv2 db ba bb--w2 bg-white dim dark-green f6 br1"
+                >Research space &raquo;</a
+              >
             </div>
           </article>
-          <div
-            class="bg-black white-90 center measure-wide f5 pv5 mv4 lh-copy ph3 br--top br2 serif"
-          >
-            <h1 class="f3 pv3 mv4 tc lh-title ba b--white-50 monospace fw1 ttu bg-white-10">
-              The repercussion of ugliness is endless
-            </h1>
-            <img
-              src="goodspeed.png"
-              class="w-100 f5 measure center"
-              alt="Photo of outer space"
-            />
-            <p>
-              The choice of paper size is one of the first of any given work to
-              be printed. There are two basic paper size systems in the world:
-              the international A sizes, and the American sizes.
-            </p>
-            <p>
-              The international Standard paper sizes, called the A series, is
-              based on a golden rectangle, the divine proportion. It is
-              extremely handsome and practical as well. It is adopted by many
-              countries around the world and is based on the German DIN metric
-              Standards. The United States uses a basic letter size (8 1/2 x
-              11”) of ugly proportions, and results in complete chaos with an
-              endless amount of paper sizes. It is a by-product of the culture
-              of free enterprise, competition and waste. Just another example of
-              the misinterpretations of freedom.
-            </p>
-            <p>
-              These are the basic DIN sizes in mm. for : A0, 841x1189 - A1,
-              594x841 - A2, 420x594 - A3, 297x420 - A4, 210x297 - A5, 148x210 -
-              A6, 105 x148 - A7, 74x 105 - A8, 52x74 - A9, 37x52 - A10, 26x37.
-            </p>
-            <p>
-              The A4 is the basic size for stationary. Two thirds of it is a
-              square, a nice economical happenstance resulting from the golden
-              rectangle. It is one of the reasons we tend to use as much as
-              possible the DIN sizes: proportions are always leading to other
-              nice proportions.
-            </p>
-            <p>
-              This does not happen with the American basic size which leads to
-              nothing. I counted 28 different standard sizes in USA!. The only
-              reason we use it is because everybody in USA uses it, all
-              stationary in USA is that size, so are manilla folders, les and of
-              ce equipment! The repercussion of ugliness is endless.
-            </p>
-          </div>
-
-          <div class="pa3 pa5-ns">
-            <ul class="list pl0 measure center">
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Orange
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Apple
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Peach
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Grape
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Grapefruit
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Kiwi
-              </li>
-            </ul>
-          </div>
-
-          <div class="pa3 pa5-ns bg-black white">
-            <ul class="list pl0 measure center">
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--white-30">
-                Orange
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--white-30">
-                Apple
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--white-30">
-                Peach
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--white-30">
-                Grape
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--white-30">
-                Grapefruit
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--white-30">
-                Kiwi
-              </li>
-            </ul>
-          </div>
-
-          <div class="pa3 pa5-ns">
-            <ul class="list pl0 measure center">
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Orange
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Apple
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Peach
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Grape
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Grapefruit
-              </li>
-              <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                Kiwi
-              </li>
-            </ul>
-          </div>
-        </article>
+          <footer class="pv4 ph3 ph5-m ph6-l mid-gray">
+            <small class="f6 db tc">Available for work May 2019!
+              <!-- © 2018 
+              <b class="ttu">Lorcan Blake</b>.,
+               All Rights Reserved
+               -->
+              </small>
+            <!-- <div class="tc mt3">
+              <a href="/language/" title="Language" class="f6 dib ph2 link mid-gray dim">Language</a>
+              <a href="/terms/"    title="Terms" class="f6 dib ph2 link mid-gray dim">Terms of Use</a>
+              <a href="/privacy/"  title="Privacy" class="f6 dib ph2 link mid-gray dim">Privacy</a>
+            </div> -->
+          </footer>          
+        </section>
       </div>
     </main>
-
-    <footer class="pa4 pa5-l black bt bw3 bg-dark-red min-vh-100">
-      <div class="mb4-l cf measure-wide center">
-        <h1 class="fl w-100 pv0 f6 fw6 ttu tracked mb4">Studios</h1>
-        <article class="fl w-50 dib-ns w-auto-ns mr4-m mr5-l mb4 pr2 pr0-ns">
-          <h4 class="f5 f4-l fw6">SF</h4>
-          <span class="f7 f6-l db black-70">837 Larkin St.</span>
-          <span class="f7 f6-l black-70">San Francisco, CA 94109 </span>
-          <a
-            class="f6 db fw6 pv3 black-70 link dim"
-            title="Call SF"
-            href="tel:+12075555555"
-          >
-            +1 207-555-5555
-          </a>
-        </article>
-        <article class="fl w-50 dib-ns w-auto-ns mr4-m mr5-l mb4 pl2 pl0-ns">
-          <h4 class="f5 f4-l fw6">LA</h4>
-          <span class="f7 f6-l db"> 1111 Manor Way </span>
-          <span class="f7 f6-l di"> Los Angeles, CA 90048 </span>
-          <a
-            href="tel:+13235555555"
-            class="f6 db fw6 pv3 link dim black"
-            title="Call the LA office."
-          >
-            +1 323-555-5555
-          </a>
-        </article>
-        <article class="fl w-50 dib-ns w-auto-ns mr4-m mr5-l mb4 pr2 pr0-ns">
-          <h4 class="f5 f4-l fw6">London</h4>
-          <span class="f7 f6-l db">11 Downey St.</span>
-          <span class="f7 f6-l">London, UK</span>
-          <a
-            href="tel:+5555555555"
-            class="link dim f6 db fw6 pv3 black"
-            title="Call the London office"
-            >+44 0 5555-5555</a
-          >
-        </article>
-        <article class="fl w-50 dib-ns w-auto-ns mb4 pl2 pl0-ns">
-          <h4 class="f5 f4-l fw6">Tokyo</h4>
-          <span class="f7 f6-l db">1982 Flangan Rd.</span>
-          <span class="f7 f6-l">Shinjuku, Tokyo</span>
-          <a
-            href="tel:+444444444444"
-            class="f6 db dim fw6 pv3 link black"
-            title="Call Tokyo Office"
-          >
-            +99 5555-5555
-          </a>
-        </article>
-      </div>
-      <section class="cf mb5 measure-wide center">
-        <div class="mb4 mb0-ns fl w-100 w-50-l">
-          <p class="f4 fw6 mb2 f6 mt0">Sign up for our newsletter.</p>
-          <input
-            placeholder="Email Address"
-            class="mw-100 w-100 w5-ns f5 input-reset ba b--black-20 pv3 ph4 border-box"
-          />
-          <input
-            type="submit"
-            class="input-reset dib w-100 w-auto-ns bg-black white f5 pv2 pv3-ns ph4 ba b--black-80 bg-hover-mid-gray"
-          />
-        </div>
-      </section>
-
-      <small class="f6 db tc"
-        >© 2016 <b class="ttu">SOME COMPANY Inc</b>., All Rights Reserved</small
-      >
-      <div class="tc mt3">
-        <a
-          href="/language/"
-          title="Language"
-          class="f6 dib ph2 link black dim"
-          >Language</a
-        >
-        <a href="/terms/" title="Terms" class="f6 dib ph2 link black dim"
-          >Terms of Use</a
-        >
-        <a href="/privacy/" title="Privacy" class="f6 dib ph2 link black dim"
-          >Privacy</a
-        >
-      </div>
-    </footer>
   </body>
 </html>
