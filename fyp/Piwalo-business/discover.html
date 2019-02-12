@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Piwalo / Discover </title>
+<meta name="description" content="Pitch your idea for new services and group offers to the local people who can make them happen!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../etta/css/etta.min.css" />
+<meta name="theme-color" content="#2d3740">
+<link rel="shortcut icon" type="image/x-icon" href="../etta/assets/favicon.png">
+<link rel="apple-touch-icon" href="../etta/assets/favicon.png">
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700,900);
+
+    .select-reset {
+        padding: 0;
+        margin: 0 auto;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        overflow: hidden;
+        background-color: #fff;
+        background: #fff;
+        position: relative;
+    }
+
+    .select-reset:after {
+        top: 50%;
+        left: 85%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(0, 0, 0, 0);
+        border-top-color: #000000;
+        border-width: 5px;
+        margin-top: -2px;
+        z-index: 100;
+    }
+
+    .select-reset select {
+        padding: 5px 8px;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        background-image: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-weight: 600;
+    }
+
+    .select-reset select:focus {
+        outline: none;
+    }
+</style>
+
+<body class="w-100 border-box sans-serif navy overflow-x-hidden">
+
+    <div etta-include="_prim-nav--sidebar.html"></div>
+    <div etta-include="_side-nav.html"></div>
+
+    <main id="main" onclick="closeNav()">
+
+        <div etta-include="_footer.html"></div>
+    </main>
+
+    <script src="../etta/js/e-include.js"></script>
+    <script src="../etta/js/e-scroll.js"></script>
+    <script src="../etta/js/e-filter-active.js"></script>
+    <script src="../etta/js/e-side-nav.js"></script>
+    <script src="../etta/js/icons.min.js"></script>
+    <script src="../etta/js/e-nav-active.js"></script>
+    <!-- <script src="../etta/js/siema.min.js"></script> -->
+    <script>
+        injectComponents();
+        // addActiveClass();
+        // new Siema();
+    </script>
+</body>
+
+</html>

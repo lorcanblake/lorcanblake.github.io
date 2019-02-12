@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Piwalo / Service Pitch</title>
+<meta name="description" content="Pitch your idea for new services and group offers to the local people who can make them happen!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../etta/css/etta.min.css" />
+<meta name="theme-color" content="#2d3740">
+<link rel="shortcut icon" type="image/x-icon" href="../etta/assets/favicon.png">
+<link rel="apple-touch-icon" href="../etta/assets/favicon.png">
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700,900);
+  .sticky {
+    top: 2.75rem;
+  }
+
+  @media screen and (max-width: 64em) and (min-width: 48em) {
+    .sticky {
+      top: 4rem;
+    }
+  }
+
+  @media screen and (min-width: 64em) {
+    .sticky {
+      top: .8rem;
+    }
+  }
+</style>
+
+<body class="w-100 border-box sans-serif navy overflow-x-hidden">
+
+  <div etta-include="_prim-nav--sidebar.html"></div>
+  <div etta-include="_side-nav.html"></div>
+
+  <main id="main" onclick="closeNav()" class="w-100 min-vh-100 bt b--black-10 bg-white navy ph3 ph4-m ph5-l pv5 pv6-ns fade">
+
+    <div class="db mw9 center f6 f4-m f5-l mv2 ">
+      <a class="o-80 link dim navy dib ml1 b" href="discover.html" title="Back to Discover">
+        <i data-feather="chevron-left" class="v-mid"></i> Back</a>
+    </div>
+    <div class="mw9 center ba b--dashed br2 min-vh-100 cf">
+      <div class="f6 f5 mt0 mh3 mh4-m mh5-l pt2 pt4-ns pb2 tc">
+        <div class="flex justify-between">
+          <div class="w-25 pv3 tl-ns">
+            <i data-feather="feather" class=" v-mid"></i>
+            <span class="link navy">Service Pitch</span>
+            <!-- <i data-feather="clipboard" class="f6 v-mid"></i> <a class="link navy" href="tag-service.html">Service Pitch</a> -->
+          </div>
+          <div class="w-25 pv3">
+            <!-- <i data-feather="award" class=" v-mid"></i> <span class="pb1 tracked"> Most Viewed Today </span> -->
+            <!-- <i data-feather="eye" class="f6 v-mid"></i> <span class="pb1 tracked"> 1034 views -->
+            <a class="link navy">
+              <img src="../etta/assets/user-avatar.png" class="dib w2 h2 br-100 v-mid" alt="Vendor logo">
+              <span class="link navy" href="vendor-single.html">Sarah</span>
+            </a>
+          </div>
+          <div class="w-25 pv3 tr-ns">
+            <i data-feather="book-open" class=" v-mid"></i>
+            <a class="link navy" href="category-single.html">Category</a>
+          </div>
+        </div>
+      </div>
+      <article class="cf pa3 pa4-m pa5-l">
+        <header class="fn fl-ns w-50-l pr4-ns">
+          <aside class="mb2">
+            <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked blue ba">Open call</div>
+            <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked navy ba">Seeking support</div>
+            <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked navy ba">2 Vendors considering</div>
+            <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked yellow ba" title="No activity in the past X months">Stale</div>
+            <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked green ba">Accepted</div>
+            <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked pink ba">Seeking funding</div>
+          </aside>
+          <h1 class="f3 f2-l lh-title fw9 mt4 mb3 measure">
+            Aliquam volutpat vestibulum, Donec et hendrerit ipsum.
+          </h1>
+          <h2 class="f4 f3-l mid-gray fw3 lh-title measure">
+            Aenean quis nisi felis. Curabitur imperdiet placerat, eget condimentum dui lobortis quis.
+          </h2>
+
+
+          <!-- <div class="dt mv2">
+              <div class="db dtc-ns v-mid-ns">
+                  <img src="../../favicon.png" class="db dtc-ns v-mid br-100 pa1 ba b--black-10 h3 w3 shadow " alt="avatar">
+              </div>
+              <div class="db dtc-ns v-mid ph2 pr0-ns pl3-ns">
+                  <small class="db dtc-ns v-mid ph1 pr0-ns pl3-ns mv2 pv2 f6 tracked">Offered by <a href="#" class="link bb b--pink navy">Vendor</a></small>
+              </div>
+            </div> -->
+          <article class="green mt4 mb2" data-name="slab-stat-small">
+            <!-- <h3 class="f6 ttu tracked">Today</h3> -->
+            <div class="cf">
+              <dl class="fl fn-l w-50 dib-l w-auto-ns lh-title mr4-ns">
+                <dd class="f6 fw4 ml0">Views</dd>
+                <dd class="f3 fw6 ml0">
+                  <i data-feather="eye" class="f6 f4-ns v-mid"></i> 2334</dd>
+              </dl>
+              <dl class="fl fn-l w-50 dib-l w-auto-ns lh-title mr4-ns">
+                <dd class="f6 fw4 ml0">Vendors considering</dd>
+                <dd class="f3 fw6 ml0">
+                  <i data-feather="check" class="f6 f4-ns v-mid"></i> 2</dd>
+              </dl>
+              <dl class="fl fn-l w-50 dib-l w-auto-ns lh-title mr4-ns">
+                <dd class="f6 fw4 ml0">People interested</dd>
+                <dd class="f3 fw6 ml0">
+                  <i data-feather="star" class="f6 f4-ns v-mid"></i> 84</dd>
+              </dl>
+              <dl class="fl fn-l w-50 dib-l w-auto-ns lh-title">
+                <dd class="f6 fw4 ml0">Shares</dd>
+                <dd class="f3 fw6 ml0">
+                  <i data-feather="share-2" class="f6 f4-ns v-mid"></i> 124</dd>
+              </dl>
+            </div>
+          </article>
+
+          <!-- <aside class="mv4">
+              <small class="dib pa2 green">
+                <i data-feather="clock" class="f6 f4-ns v-mid"></i> 5 days left
+              </small>
+
+              <small class="dib pa2 green">
+                  <i data-feather="users" class="f6 f4-ns v-mid"></i> 20 people
+              </small>
+
+              <small class="dib pa2 green">
+                  <i data-feather="alert-circle" class="f6 f4-ns v-mid"></i> 4 spaces free
+              </small>
+
+              <small class="dib pa2 green">
+                  <i data-feather="eye" class="f6 f4-ns v-mid"></i> 1034 views
+              </small>
+          </aside> -->
+
+          <aside class="mr4 mw6-l">
+            <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
+              <div class="bg-green br-pill h1 shadow-1 w-75"></div>
+            </div>
+          </aside>
+
+          <!-- <div class="db mt3">
+              <a href="#" class="f6 f5-ns b dib mw5 pa2 ma2  link dim navy ba b--black-20">
+                  <i data-feather="link-2" class="f6 f4-ns v-mid"></i> Linked offer #1</a>
+              <a href="#" class="f6 f5-ns b dib mw5 pa2 ma2 link dim navy ba b--black-20">
+                  <i data-feather="link-2" class="f6 f4-ns v-mid"></i> Linked offer #2</a>
+          </div> -->
+
+          <!--           
+          <aside class="mv4">
+            <a class="tc bb--w2 f7 f6-ns fw7 no-underline grow dib v-mid navy ba b--black-60 br-pill ph3 ph4-ns pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+              <i data-feather="plus" class="f6 f5-ns v-mid"></i> Join
+            </a>
+            <a class="tc bb--w2 f7 f6-ns fw7 no-underline grow dib v-mid navy ba b--black-60 br-pill ph3 ph4-ns pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+              <i data-feather="star" class="f6 f5-ns v-mid"></i> Interested
+            </a>
+            <a class="tc bb--w2 f7 f6-ns fw7 no-underline grow dib v-mid navy ba b--black-60 br-pill ph3 ph4-ns pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+              <i data-feather="message-square" class="f6 f5-ns v-mid"></i> Comment
+            </a>
+          </aside> -->
+
+        </header>
+
+
+        <div class="fn fl-ns w-50-l serif pl3-l">
+          <div class="f7 f4-m f6-l cf dib mv4 mv2-m mt0-l center sans-serif" id="filter">
+            <a class="fl bg-white hover-bg-navy hover-white link bb bt bl pa2 ph3-l dib b--navy br2 br--left bl filter-active" onclick="detailsView();">Details</a>
+            <a class="fl bg-white hover-bg-navy hover-white b--navy link ba pa2 ph3-l dib navy" onclick="discussionView();">Discussion (10) </a>
+            <a class="fl bg-white hover-bg-navy hover-white b--navy link bb bt pa2 ph3-l dib navy br2 br--right br" onclick="activityView();">Activity</a>
+          </div>
+
+          <!-- <section class="tc mw6-l center" id="filter">
+              <div class="f7 f4-m f6-l cf dib mb4 tc mt2 sans-serif">
+                  <a class="fl link bb bt bl pa2 ph3-ns dib near-white bg-navy b--navy br2 br--left bl border-box" href="#">
+          All </a>
+          <a class="fl bg-white hover-bg-navy hover-white b--navy link bt bb br pa2 ph3-ns dib navy" href="#">
+            Offers </a>
+          <a class="fl  bg-white hover-bg-navy hover-white b--navy link bt bb br pa2 ph3-ns dib navy" href="#">
+            Services </a>
+          <a class="fl  bg-white hover-bg-navy hover-white b--navy link bb bt pa2 ph3-ns dib navy br2 br--right br" href="">
+            Pitches </a>
+        </div>
+        </section> -->
+
+          <section id="details" class="fade db">
+            <dt class="f5 b mv3 mt2 sans-serif">Description</dt>
+            <dd class="f5 lh-copy measure ml0 mt0-ns mb4">
+              // description copy here
+            </dd>
+            <dt class="f5 b mv3 sans-serif">Media (4)</dt>
+            <dd class="z-1 cf mv2 mh0 mb4 measure siema">
+              <div class="fl w-100">
+                <div class="aspect-ratio aspect-ratio--7x5 mr2">
+                  <div class="aspect-ratio--object cover z-1" style="background:url(../etta/assets/placeholder.png) center;"></div>
+                </div>
+              </div>
+              <div class="fl w-100">
+                <div class="aspect-ratio aspect-ratio--7x5 mr2">
+                  <div class="aspect-ratio--object cover z-1" style="background:url(../etta/assets/placeholder.png) center;"></div>
+                </div>
+              </div>
+              <div class="fl w-100">
+                <div class="aspect-ratio aspect-ratio--7x5 mr2">
+                  <div class="aspect-ratio--object cover z-1" style="background:url(../etta/assets/placeholder.png) center;"></div>
+                </div>
+              </div>
+              <div class="fl w-100">
+                <div class="aspect-ratio aspect-ratio--7x5 mr2">
+                  <div class="aspect-ratio--object cover z-1" style="background:url(../etta/assets/placeholder.png) center;"></div>
+                </div>
+              </div>
+            </dd>
+            <dt class="f5 b mb3 mt4 sans-serif">Terms and Conditions</dt>
+            <dd class="f5 lh-copy ml0 mt0-ns mb3 measure">
+              All typography consists of letters. These appear either in the form of a smoothly running sentence or as an assembly of lines,
+              which may even have contrasting shapes. Good typog- raphy begins, and this is no minor matter, with the typeset-
+              ting of a single line of text in a book or a newspaper. Using exactly the same typeface, it is possible to
+              create either a pleasant line, easily read, or an onerous one. Spacing, if it is too wide or too compressed,
+              will spoil almost any typeface.
+            </dd>
+            <dd class="f5 lh-copy ml0 mt0-ns mb4 measure">
+              All typography consists of letters. These appear either in the form of a smoothly running sentence or as an assembly of lines,
+              which may even have contrasting shapes. Good typog- raphy begins, and this is no minor matter, with the typeset-
+              ting of a single line of text in a book or a newspaper. Using exactly the same typeface, it is possible to
+              create either a pleasant line, easily read, or an onerous one. Spacing, if it is too wide or too compressed,
+              will spoil almost any typeface.
+            </dd>
+          </section>
+
+          <section id="discussion" class="lh-title fade mt0 f5 lh-copy measure dn">
+            <article class="ba b--black-10 ph2 pv3">
+              <dt class="b sans-serif">Topic</dt>
+              <dd class="ml0">Aenean quis nisi felis. Curabitur imperdiet placerat, eget condimentum dui lobortis quis.</dd>
+
+              <article class="ml2 ph1 pv2">
+                <dt class="b sans-serif">
+                  <i data-feather="corner-down-right" class="h1 w1 v-mid"></i> reply</dt>
+                <dd class="ml0">Aenean quis nisi felis. Curabitur imperdiet placerat, eget condimentum dui lobortis quis.</dd>
+
+                <article class="ml2 ph1 pv2">
+                  <dt class="b sans-serif">
+                    <i data-feather="corner-down-right" class="h1 w1 v-mid"></i> reply</dt>
+                  <dd class="ml0">Aenean quis nisi felis. Curabitur imperdiet placerat, eget condimentum dui lobortis quis.</dd>
+                </article>
+
+              </article>
+
+            </article>
+          </section>
+
+          <section id="activity" class="fade dn">
+
+            <dl class="lh-title mt4 f5 lh-copy measure bl pl2">
+              <dt class=" b mt2 sans-serif">Timeline item</dt>
+              <dd class="ml0 f6">Timeline description
+                <time class="pl2">Time</time>
+              </dd>
+            </dl>
+            <dl class="lh-title mt0 f5 lh-copy measure bl bw2 pl2">
+              <dt class="f4 b mt2 sans-serif">
+                <i data-feather="flag" class="h1 w1 v-mid"></i> Milestone item</dt>
+              <dd class="ml0 f6 ">Timeline description
+                <time class="pl2">Time</time>
+              </dd>
+            </dl>
+            <dl class="lh-title mt0 f5 lh-copy measure bl pl2">
+              <dt class="b mt2 sans-serif">Timeline item</dt>
+              <dd class="ml0 f6">Timeline description
+                <time class="pl2">Time</time>
+              </dd>
+            </dl>
+
+          </section>
+
+          <aside class="mv4 f7 f6-ns fw7 w-100 sans-serif">
+            <!-- <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+              <i data-feather="plus" class="v-mid"></i> Join
+            </a> -->
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+              <i data-feather="star" class="fill-navy v-mid"></i> You're interested!
+            </a>
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+              <i data-feather="share-2" class="v-mid"></i> Share
+            </a>
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+              <i data-feather="message-square" class="v-mid"></i> Comment
+            </a>
+          </aside>
+        </div>
+      </article>
+
+    </div>
+    <div class="db mw9 center mv4 ">
+
+      <h3 class="f5 f3-ns mt0 pt5 pt4-ns pb2 tc lh-copy">
+        <span class="pb1 bb bw2 b--pink">Related</span>
+      </h3>
+
+      <section class="cf pv3 flex flex-column flex-row-l items-top justify-between-l slider1">
+        <article class="z-1 bg-white ba b--black-60 shadow fl mw6 mw9-m center tc ma2 ma3-l ba br1 relative">
+          <div class="pv2 ph3">
+            <h1 class="fw4 f6 ttu tracked">
+              <i data-feather="users" class="f6 f5-ns v-mid"></i> Group Offer</h1>
+          </div>
+          <div class="aspect-ratio aspect-ratio--16x9 mb3">
+            <div class="aspect-ratio--object cover" style="background:url(../etta/assets/placeholder.png) center;"></div>
+          </div>
+          <aside class="mv1 tc f6 f5-ns">
+            <small class="dib pa2 green">
+              <i data-feather="clock" class="v-mid"></i> 5 days left
+            </small>
+
+            <small class="dib pa2 green">
+              <i data-feather="crosshair" class="v-mid"></i> 20 people
+            </small>
+
+            <small class="dib pa2 green">
+              <i data-feather="user-check" class="v-mid"></i> 4 spaces free
+            </small>
+          </aside>
+
+          <div class="bg-moon-gray br-pill h1 overflow-y-hidden w-80 center mv2 mh3">
+            <div class="bg-green br-pill h1 shadow-1 w-75"></div>
+          </div>
+
+          <div class="pa3 tl cf measure">
+            <a href="#" class="fw6 navy link dim lh-title">Aliquam volutpat vestibulum, Donec et hendrerit ipsum.</a>
+            <p class="lh-copy f6 f5-m serif">
+              Aenean quis nisi felis. Curabitur imperdiet placerat, eget condimentum dui lobortis quis.
+            </p>
+            <small class="mb5 db pt1 pb2">Offered by
+              <i data-feather="check" class="bg-light-blue white pa1 br4 w1 h1 v-mid" title="Verified Account"></i>
+              <a class="link navy fw6 bb b--pink" href="vendor-single.html">Vendor</a> -
+              <time>5 days ago</time> -
+              <span class="">2 comments</span>
+              <!-- <div class="db mt2">
+                    <a href="#" class="f6 f5-ns b db pa2 ma2  link dim navy ba b--black-20"><i data-feather="link-2" class="f6 f4-ns v-mid"></i> Linked offer</a>
+                    <a href="#" class="f6 f5-ns b db pa2 ma2 link dim navy ba b--black-20"><i data-feather="link-2" class="f6 f4-ns v-mid"></i> Abyssinian</a>
+                </div> -->
+            </small>
+          </div>
+
+          <a class="cf absolute bottom-0 tc cf db w-100 f6 f5-m fw7 no-underline bg-black-05 navy ph4 pv3 mt4" href="offer-single.html">
+            More details
+          </a>
+        </article>
+        <article class="z-1 bg-white ba b--black-60 shadow fl mw6 mw9-m center tc ma2 ma3-l ba b--dashed br1 relative">
+          <div class="pv2 ph3">
+            <h1 class="fw4 f6 ttu tracked">
+              <i data-feather="feather" class="f6 f5-ns v-mid"></i> Service Pitch </h1>
+          </div>
+          <!-- <div class="aspect-ratio aspect-ratio--16x9 mb3">
+          <div class="aspect-ratio--object cover" style="background-color:transparent; background-position: center;">
+          </div>
+      </div> -->
+          <aside class="mv1 tc f6 f5-ns">
+            <small class="dib pa2 green">
+              <i data-feather="book-open" class="f6 f4-ns v-mid"></i> Category
+            </small>
+
+            <small class="dib pa2 green">
+              <i data-feather="star" class="f6 f4-ns v-mid"></i> 33 interested
+            </small>
+
+            <small class="dib pa2 green">
+              <i data-feather="link-2" class="f6 f4-ns v-mid"></i> 3
+            </small>
+          </aside>
+
+          <!-- <div class="bg-moon-gray br-pill h1 overflow-y-hidden w-80 center mv2 mh3">
+                <div class="bg-green br-pill h1 shadow-1 w-75"></div>
+            </div> -->
+
+          <div class="pa3 tl cf measure">
+            <a href="#" class="fw6 navy link dim lh-title">Aliquam volutpat vestibulum, Donec et hendrerit ipsum.</a>
+            <p class="lh-copy f6 f5-m serif">
+              Aenean quis nisi felis. Curabitur imperdiet placerat, eget condimentum dui lobortis quis.
+            </p>
+            <small class="mb5 db pt1 pb2">Submitted by AP -
+              <time>6 hours ago</time>
+
+              <!-- <aside class="mv4 f7 f6-ns fw7 w-100">
+                            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--black-60 br2 ph3 pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+                              <i data-feather="plus" class="v-mid"></i> Join
+                            </a>
+                            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--black-60 br2 ph3 pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+                              <i data-feather="star" class="v-mid"></i> Interested
+                            </a>
+                          </aside> -->
+            </small>
+
+          </div>
+          <a class="cf absolute bottom-0 tc cf db w-100 f6 f5-m fw7 no-underline bg-black-05 navy ph4 pv3 mt4" href="pitch-single.html">
+            Read more
+          </a>
+        </article>
+        <article class="z-1 bg-white ba b--black-60 shadow fl mw6 mw9-m center tc ma2 ma3-l ba br1 relative">
+          <div class="pv2 ph3">
+            <h1 class="fw4 f6 ttu tracked">
+              <i data-feather="users" class="f6 f5-ns v-mid"></i> Group Offer</h1>
+          </div>
+          <div class="aspect-ratio aspect-ratio--16x9 mb3">
+            <div class="aspect-ratio--object cover" style="background:url(../etta/assets/placeholder.png) center;"></div>
+          </div>
+          <aside class="mv1 tc f6 f5-ns">
+            <small class="dib pa2 green">
+              <i data-feather="clock" class="f6 f4-ns v-mid"></i> 5 days left
+            </small>
+
+            <small class="dib pa2 green">
+              <i data-feather="crosshair" class="f6 f4-ns v-mid"></i> 20 people
+            </small>
+
+            <small class="dib pa2 green">
+              <i data-feather="user-check" class="f6 f4-ns v-mid"></i> 4 spaces free
+            </small>
+          </aside>
+
+          <div class="bg-moon-gray br-pill h1 overflow-y-hidden w-80 center mv2 mh3">
+            <div class="bg-green br-pill h1 shadow-1 w-75"></div>
+          </div>
+
+          <div class="pa3 tl cf measure">
+            <a href="#" class="fw6 navy link dim lh-title">Aliquam volutpat vestibulum, Donec et hendrerit ipsum.</a>
+            <p class="lh-copy f6 f5-m serif">
+              Aenean quis nisi felis. Curabitur imperdiet placerat, eget condimentum dui lobortis quis.
+            </p>
+            <small class="mb5 db pt1 pb2">Submitted by Anonymous -
+              <time>6 hours ago</time>
+            </small>
+          </div>
+
+          <a class="cf absolute bottom-0 tc cf db w-100 f6 f5-m fw7 no-underline bg-black-05 navy ph4 pv3 mt4" href="offer-single.html">
+            More details
+          </a>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <div etta-include="_footer.html"></div>
+  <script src="../etta/js/e-include.js"></script>
+  <script src="../etta/js/e-nav-active.js"></script>
+  <script src="../etta/js/e-scroll.js"></script>
+  <script src="../etta/js/e-filter-active.js"></script>
+  <script src="../etta/js/e-offer-single-panel.js"></script>
+  <script src="../etta/js/e-side-nav.js"></script>
+  <script src="../etta/js/icons.min.js"></script>
+  <script src="../etta/js/siema.min.js"></script>
+  <script>
+    injectComponents();
+    new Siema();
+  </script>
+</body>
+
+</html>

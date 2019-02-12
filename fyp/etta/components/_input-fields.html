@@ -1,0 +1,58 @@
+<!-- location -->
+
+<h1 class="f4 f3-m f2-l fw2 mt3 mt0-ns mb2 lh-title v-mid center tc">
+    <i data-feather="map-pin" class="db f4 f3-l h2 w1 h3-ns w2-ns v-top tc center"></i>
+    <input type="text" class="tc fw9 h3 w6-l navy bn bb bw2 b--pink ma0 pa0 input-reset" placeholder="Set your location" value="Clonmel, Co. Tipperary">
+    <span class="db mt2-ns mw4 center ba bw2 b--pink"></span>
+  </h1>
+
+<!-- registration/pitch -->
+
+<form action="register-3.html" method="get" accept-charset="utf-8">
+    <fieldset id="sign_up" class="ba b--transparent ph0 mh0 navy">
+      <legend class="ph0 mh0 fw6 clip">Register Step 2: Account Preferences</legend>
+      <div class="measure mb3 f6 f5-ns">
+        <label for="name" class="b db mb2">Name
+          <span class="normal black-60">(optional)</span>
+        </label>
+        <input id="name" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="text" aria-describedby="name-desc"
+          placeholder="First or full name">
+        <span id="name-desc" class="f6 tl black-70 db mv3 lh-copy">Some people like to be recognised for their ideas, others don't. You'll be known as Anonymous if you leave
+          this blank.</span>
+      </div>
+      <div class="measure mb3 f6 f5-ns">
+        <label for="name" class="b db mb2">Profile picture
+          <span class="normal black-60">(optional)</span>
+        </label>
+        <input id="name" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="file" aria-describedby="name-desc">
+        <span id="profile-pic" class="f6 tl black-70 db mv3 lh-copy">Again, you leave this blank. We'll give you a suitably undercover avatar.</span>
+      </div>
+      <div class="measure mb3 f6 f5-ns">
+        <label for="password" class="b dib mb2">Description</label> <span class="normal black-60">(min. 180 characters)</span>
+        <textarea rows="5" class="resize-v input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure b"></textarea>
+      </div>
+      <div class="measure mb3 f6 f5-ns">
+        <label for="location" class="b db mb2">Location</label>
+        <input class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="text" placeholder="Set your location"
+          value="Use current location" name="location" id="location" required>
+        <span id="location-desc" class="f6 tl black-70 db mv3 lh-copy">We ask for access to your location so that can that you only see offers relevant to your area, which helps
+          both you and local businesses. </a>
+        </span>
+      </div>
+      <div class="measure mb3 f6 f5-ns">
+        <label for="location-radius" class="b db mb2">Location radius</label>
+        <!-- <input class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure b" type="password" name="password"  id="password"> -->
+        <input type="range" min="5" max="25" step="5" value="10" class="slider w-100 h1 h2-ns br2 ba b--navy bg-white outline-0"
+          id="radius-slider">
+        <span id="location-radius-desc" class="f6 tl black-70 db mv3 lh-copy">You will see offers
+          <span class="bb b--green">up to
+            <span id="radius"></span>km away</span>. Don't worry, you'll never see group offers or services from businesses that don't
+          cover your area! </a>
+        </span>
+      </div>
+    </fieldset>
+    <button type="submit" class="button-reset grow shadow tc f7 f6-ns fw7 no-underline dib v-mid bg-navy white ba b--navy br-pill ph4 pv2 mv3">
+      Continue
+      <i data-feather="chevron-right" class="f6 f5-ns v-mid"></i>
+    </button>
+  </form>

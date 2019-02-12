@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Piwalo / Pitch </title>
+<meta name="description" content="Pitch your idea for new services and group offers to the local people who can make them happen!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../etta/css/etta.min.css" />
+<meta name="theme-color" content="#2d3740">
+<link rel="shortcut icon" type="image/x-icon" href="../etta/assets/favicon.png">
+<link rel="apple-touch-icon" href="../etta/assets/favicon.png">
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700,900);
+</style>
+
+<body class="w-100 border-box sans-serif navy">
+
+  <div etta-include="_prim-nav.html"></div>
+
+
+  <section class="ph3 ph5-l dt w-100 vh-100 pv2 fade">
+      <div class="dtc v-mid tc mv4 pv4 ph3 mw9 center ">
+  
+        <article class="ma0 pv3 ph1 pa5-ns center mw6 bn">
+          <a class="db dn-ns mb1" href="#" title="Piwalo home">
+            <img class="rotate shadow dib w32 h32 br-100 v-mid" src="../etta/assets/favicon.png" title="Piwalo logo">
+          </a>
+          <span class="f6 no-underline navy pv2 db tc">Step 1 of 4 </span>
+          <h1 class="tc f4 bold mb4">
+            <span class="bb bw2 b--pink lh-copy">I have an idea for a..</span>
+          </h1>
+
+          
+        <div class="pa4-l mt4">
+
+            <div class="flex justify-center dt border-box w-100 mw5 center">
+              <!-- <a class="shadow f7 f6-ns fw7 no-underline grow dib dtc v-mid navy ba b--black-60 br1 pa3 pa4-ns mb3 w-30 w-20-l mr2 tc ttu"
+                    href="updates.html">
+                    <span class="center tc">
+                      <i data-feather="inbox" class="f6 f5-ns db v-mid center mb3 relative"></i>
+                  </a> -->
+              <a id="new-offer" class="panel offer shadow f7 f6-ns fw7 no-underline grow dib dtc v-mid navy ba b--black-60 br1 pa3 pa4-ns mb3 w-50 mr2 tc ttu"
+                onclick="choosePitch(this);">
+                <span class="center tc">
+                  <i data-feather="users" class="f6 f5-ns db v-mid center mb3"></i> Group offer </span>
+              </a>
+              <a id="new-service" class="panel service shadow f7 f6-ns fw7 no-underline grow dib dtc v-mid navy ba b--black-60 br1 pa3 pa4-ns mb3 w-50 mr2 tc ttu"
+                onclick="choosePitch(this);">
+                <span class="center tc">
+                  <i data-feather="home" class="f6 f5-ns db v-mid center mb3"></i> New service </span>
+              </a>
+      
+            </div>
+            <div id="help-text" class="f6 tc tl black-70 db mv3 lh-copy">Select one of the above</div>
+  
+          </div>
+
+          
+  
+          <form action="register-2.html" method="get" accept-charset="utf-8" id="" class="">
+            <fieldset id="sign_up" class="ba b--transparent ph0 mh0 navy">
+              <legend class="ph0 mh0 fw6 clip">Register: Step 1</legend>
+              <div class="measure mb3 f6 f5-ns">
+                <label for="email" class="b dib mb2">Title</label> <span class="normal black-60">(required)</span>
+                <input class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="text" name="email-address" id="email-address"
+                  >
+                <span id="email-desc" class="f6 tl black-70 db mv3 lh-copy">You're aiming to draw the attention of the community and vendors alike.</a>
+                </span>
+              </div>
+              <div class="measure mb3 f6 f5-ns">
+                <label for="password" class="b dib mb2">Description</label> <span class="normal black-60">(min. 180 characters)</span>
+                <textarea rows="5" class="resize-v input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure b"></textarea>
+              </div>
+              <div class="measure mb3 f6 f5-ns">
+                  <label for="name" class="b db mb2">Add imagery
+                    <span class="normal black-60">(optional)</span>
+                  </label>
+                  <input id="name" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="file" aria-describedby="name-desc">
+                </div>
+            </fieldset>
+            <!-- <div class="mt3"><input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" value="Sign Up"></div> -->
+            <!-- <a class="shadow tc f7 f6-ns fw7 no-underline grow dib v-mid bg-white navy ba b--navy br-pill ph4 pv2 mv3" href="index.html">
+              <i data-feather="chevron-left" class="f6 f5-ns v-mid"></i> Back
+            </a> -->
+          </form>
+          <a id="new-offer-onboard" class="button-reset grow shadow tc f7 f6-ns fw7 no-underline v-mid bg-navy white ba b--navy br-pill ph4 pv2 mv3 dn"
+          href="offer-new.html">
+          Continue
+          <i data-feather="chevron-right" class="f6 f5-ns v-mid"></i>
+        </a>
+        <a id="new-service-onboard" class="button-reset grow shadow tc f7 f6-ns fw7 no-underline v-mid bg-navy white ba b--navy br-pill ph4 pv2 mv3 dn"
+        href="offer-new.html">
+        Continue
+        <i data-feather="chevron-right" class="f6 f5-ns v-mid"></i>
+      </a>
+        <!-- <a id="new-service-onboard" class="button-reset grow shadow tc f7 f6-ns fw7 no-underline v-mid bg-navy white ba b--navy br-pill ph4 pv2 mv3 dn"
+        href="service-new.html">
+        Continue
+        <i data-feather="chevron-right" class="f6 f5-ns v-mid"></i>
+      </a> -->
+        </article>
+  
+  
+  
+        <!-- <a class="shadow f7 f6-ns fw7 no-underline grow dib v-mid navy ba b--black-60 br-pill ph4 pv2 mb3" href="#categories"> 
+                  <i data-feather="book" class="f6 f5-ns v-mid"></i>  View Categories
+                </a> -->
+      </div>
+    </section>
+
+
+    <div etta-include="_footer.html"></div>
+    <script src="../etta/js/e-include.js"></script>
+    <script src="../etta/js/e-pitch.js"></script>
+    <script src="../etta/js/e-side-nav.js"></script>
+    <script src="../etta/js/icons.min.js"></script>
+    <script>
+      injectComponents();
+    </script>
+    <script src="../etta/js/e-check-list.js"></script>
+</body>
+
+</html>

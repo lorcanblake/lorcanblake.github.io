@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> 5ervice </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../etta.min.css" />
+<meta name="theme-color" content="#2d3740">
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700,900);
+  .b--pink, .b--green{
+    position: relative;
+    border: none;
+    padding-bottom: 1.2rem;
+    text-decoration-line: underline;
+    text-decoration-style: wavy !important;
+    text-decoration-color: #fe29c7;
+    text-underline-position: under;
+  }
+  .b--green{
+    text-decoration-color: #3dac26;
+  }
+  .fill-navy{
+    fill: #2d3740;
+  }
+  .bg-black-10 {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  .bb--w2{
+    border-bottom-width: 2px;
+  }
+</style>
+<body>
+    <body class="w-100 border-box sans-serif navy">
+
+        <nav class="z-5 db dt-l w-100 border-box pa2 pa3-ns ph5-l bb bt b--black-10 fixed bg-white shadow">
+            <a class="dn db-l dtc-l v-mid mid-gray link w-25-l tc tl-l mb2" href="index.html" title="Home">
+              <!-- <img src="http://tachyons.io/img/logo.jpg" class="dib w2 h2 br-100" alt="Site Name"> -->
+              <img class="rotate shadow dib w32 h32 br-100 mr1 v-mid" src="../../favicon.png" title="5ervice logo"> 
+              <span class="dn dib-ns black-70 serif hover-navy">5ervice</span>
+            </a>
+            <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+              <a class="link fw6 dim navy f6 f5-l dib ml3 ml4-l" href="#" title="Home"><i data-feather="search" class="f6 f5-ns v-mid"></i> <span class="dn dib-ns">Search</span></a>
+              <a class="link dim navy f6 f5-l dib ml3 ml4-l" href="discover.html" title="Discover"><i data-feather="sun" class="f6 f5-ns v-mid"></i> <span class="">Discover</span></a>
+              <a class="link dim navy f6 f5-l dib ml3 ml4-l" href="#pitch" title="Pitch"><i data-feather="plus-square" class="f6 f5-ns v-mid"></i> <span class="">Pitch</span></a>
+              <!-- <a class="link dim navy f6 f5-l dib ml3 ml4-l" href="#" title="How it Works"><i data-feather="trending-up" class="f6 f5-ns v-mid"></i> <span class="dn dib-ns">Popular</span></a> -->
+              <!-- <a class="link dim navy f6 f5-l dib ml3 ml4-l" href="#" title="Blog"><i data-feather="settings" class="f6 f5-ns v-mid"></i> Settings</a> -->
+              <a class="link dim navy f6 f5-l dn dib-ns ml3 ml4-l" href="#" title="Press"><i data-feather="log-in" class="f6 f5-ns v-mid"></i> <span class="">Login</span></a>
+              <a class="link dim navy f6 f5-l dib dn-ns ml3 ml4-l" href="#" title="Contact"><i data-feather="menu" class="f6 f5-ns v-mid"></i></a>
+
+            </div>
+          </nav>
+
+          <!-- <header class="cf ph3 ph5-ns w-100 bg-white pv3 mv4 mv5-ns bb bt b--black-10 overflow-auto">
+            <div class="nowrap mw9 center fw3">
+              <a class="pv1-ns f6 dim link navy mr2 mr3-m mr4-l dib ttc" routerlinkactive="pb1 bb bw1 b--pink b" href="/etta/styleguide/typography">
+                discover
+              </a><a class="pv1-ns f6 dim link navy mr2 mr3-m mr4-l dib ttc" routerlinkactive="pb1 bb bw1 b--pink b" href="/etta/styleguide/typestyles">
+                suggest
+              </a><a class="pv1-ns f6 dim link navy mr2 mr3-m mr4-l dib ttc" routerlinkactive="pb1 bb bw1 b--pink b" href="/etta/styleguide/typefaces">
+                offers
+              </a><a class="pv1-ns f6 dim link navy mr2 mr3-m mr4-l dib ttc" routerlinkactive="pb1 bb bw1 b--pink b" href="/etta/styleguide/measure">
+                activity
+              </a><a class="pv1-ns f6 dim link navy mr2 mr3-m mr4-l dib ttc" routerlinkactive="pb1 bb bw1 b--pink b" href="/etta/styleguide/grids">
+                grids
+              </a>
+            </div>
+          </header> -->
+          
+          <section class="ph3 ph5-l dt w-100 vh-100 pv2">
+            <div class="dtc v-mid tc-l mv4 pv4 ph3 mw9 center ">
+                <article class="pa3 pa5-ns">
+                    <h1 class="f4 bold center mw6 navy bb bw2 b--pink">Categories</h1>
+                    <ul class="list pl0 ml0 center mw6 ba b--light-silver br2">
+                      <li class="ph3 pv3 bb b--light-silver"><a class="link navy" href="categories-sub.html">Category #1 <i data-feather="arrow-right-circle" class="f6 f5-ns v-mid fr"></i></a></li>
+                      <li class="ph3 pv3 bb b--light-silver">Category #2 <i data-feather="arrow-right-circle" class="f6 f5-ns v-mid fr"></i></li>
+                      <li class="ph3 pv3 bb b--light-silver">Category #3 <i data-feather="arrow-right-circle" class="f6 f5-ns v-mid fr"></i></li>
+                      <li class="ph3 pv3 bb b--light-silver">Category #4 <i data-feather="arrow-right-circle" class="f6 f5-ns v-mid fr"></i></li>
+                      <li class="ph3 pv3 bb b--light-silver">Category #5 <i data-feather="arrow-right-circle" class="f6 f5-ns v-mid fr"></i></li>
+                      <li class="ph3 pv3 bb b--light-silver">Category #6 <i data-feather="arrow-right-circle" class="f6 f5-ns v-mid fr"></i></li>
+                      <li class="ph3 pv3">Category #7 <i data-feather="arrow-right-circle" class="f6 f5-ns v-mid fr"></i></li>
+                    </ul>
+                  </article>
+
+              <a class="shadow f7 f6-ns fw7 no-underline grow dib v-mid bg-white navy ba b--navy br-pill ph4 pv2 mb3" href=""> 
+                <i data-feather="settings" class="f6 f5-ns v-mid"></i>  Settings
+              </a>
+              <!-- <a class="shadow f7 f6-ns fw7 no-underline grow dib v-mid navy ba b--black-60 br-pill ph4 pv2 mb3" href="#categories"> 
+                <i data-feather="book" class="f6 f5-ns v-mid"></i>  View Categories
+              </a> -->
+            </div>
+          </section>
+
+
+
+          <article class="w-100 min-vh-100 bt b--black-10 bg-white navy ph3 ph5-ns pv4 pv5-ns" id="categories">
+          <div class="mw9 center">
+        
+            <section class="cf">
+              <h3 class="f5 f3-ns mt0 pt5 pt4-ns pb2 tc"><!-- <i data-feather="sun" class="f6 f5-ns v-mid"></i>--> <span class="pb1">Results for ''</h3>
+              <!-- <p class="f6 f5-ns measure lh-copy mt0 serif tc-l center-l">Copy goes here.</p> -->
+
+              <article style="overflow: auto">
+
+              <section _ngcontent-c6="" class="pv3">
+
+                <section class="cf flex-l justify-around">
+
+                    <div class="fl w-100 w-33-l tc pt4 mv2 mr1 ba">
+                        <div class="pv2 ph4">
+                            <!-- <h1 class="f6 ttu tracked"><i data-feather="eye" class="f6 f5-ns v-mid"></i> Most Viewed Today</h1> -->
+                            <!-- <h1 class="f6 ttu tracked"><i data-feather="zap" class="f6 f5-ns v-mid"></i> Latest Pitch</h1> -->
+                            <h1 class="f6 ttu tracked"><i data-feather="gift" class="f6 f5-ns v-mid"></i> Group Offer</h1>
+                            <!-- <div class="cf dib pv2">
+                              <a class="f7 f6-ns fl  link bb bt bl pa2 ph3-l dib near-white bg-navy b--navy br2 br--left bl" href="#0">Summary</a>
+                              <a class="f7 f6-ns fl  hover-bg-navy hover-white b--navy link ba pa2 ph3-l dib navy" href="#0">Discussion</a>
+                              <a class="f7 f6-ns fl  hover-bg-navy hover-white b--navy link bb bt pa2 ph3-l dib navy br2 br--right br" href="#0">Activity</a>
+                          </div> -->
+                        </div>
+                        <!-- <img src="http://tachyons.io/img/cat-720.jpg" class="w-100 db" alt="Closeup photo of a tabby cat yawning."> -->
+                        <div class="pa3 tl">
+                          <section class="pa2 bg-white ba br2 shadow">
+                            <a href="#" class="link navy f4 fw6 dim lh-title tl">Aliquam volutpat vestibulum, Donec et hendrerit ipsum.</a>
+                            <p class="lh-copy f6 serif tl">
+                                Aenean quis nisi felis. Curabitur imperdiet placerat, eget condimentum dui lobortis quis. 
+                            </p>
+                            <h4 class="f6 fw3 mb1 ttu tracked tc">More Details</h4>
+                          </section>
+
+                          <aside class="mv2 tc">
+                            <small class="dib pa2 green">
+                              <i data-feather="clock" class="f6 f4-ns v-mid"></i> 5 days left
+                            </small>
+
+                            <small class="dib pa2 green">
+                                <i data-feather="crosshair" class="f6 f4-ns v-mid"></i> 20 people
+                            </small>
+
+                            <small class="dib pa2 green">
+                                <i data-feather="users" class="f6 f4-ns v-mid"></i> 4 spaces free
+                            </small>
+                          </aside>
+
+                          <div class="bg-moon-gray br-pill h1 overflow-y-hidden ma3">
+                              <div class="bg-green br-pill h1 shadow-1 w-75" ></div>
+                          </div>
+
+                          <aside class="mv2 tc">
+
+                          <a class="tc bb--w2 f7 f6-ns fw7 no-underline grow dib v-mid navy ba b--black-60 br-pill ph3 ph4-ns pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css"> 
+                            <i data-feather="star" class="f6 f5-ns v-mid"></i>  Interested
+                          </a>
+
+                          <a class="tc bb--w2 f7 f6-ns fw7 no-underline grow dib v-mid navy ba b--black-60 br-pill ph3 ph4-ns pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css"> 
+                            <i data-feather="bookmark" class="f6 f5-ns v-mid"></i>  Follow
+                          </a>
+                          
+                          <!-- <a class="tc w-33 dib fl f7 f6-ns fw7 no-underline v-mid navy br-pill ttu ph3 pv2 mt4 mb0" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css"> 
+                            <i data-feather="arrow-left" class="f6 f5-ns v-mid"></i> Prev
+                          </a>
+                          <a class="tc w-33 dib fr f7 f6-ns fw7 no-underline v-mid navy br-pill ttu b--black-60 ph3 pv2 mt4 mb0" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css"> 
+                            Next <i data-feather="arrow-right" class="f6 f5-ns v-mid"></i>
+                          </a> -->
+
+                        </aside>
+                        </div>
+
+                        <a class="tc cf db f7 f6-ns fw7 no-underline v-mid bg-black-10 navy bt ph4 pv3 mt3 mb0" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css"> 
+                          View all
+                        </a>
+                    </div>
+
+
+                    <div class="fl w-100 w-33-l tc pt4 mv2 mr1 ba">
+                        <div class="pv2 ph4">
+                            <!-- <h1 class="f6 ttu tracked"><i data-feather="eye" class="f6 f5-ns v-mid"></i> Most Viewed Today</h1> -->
+                            <h1 class="f6 ttu tracked"><i data-feather="briefcase" class="f6 f5-ns v-mid"></i> Service Pitch</h1>
+                            <!-- <h1 class="f6 ttu tracked"><i data-feather="trending-up" class="f6 f5-ns v-mid"></i> Trending Offer</h1> -->
+                            <!-- <div class="cf dib pv2">
+                              <a class="f7 f6-ns fl  link bb bt bl pa2 ph3-l dib near-white bg-navy b--navy br2 br--left bl" href="#0">Summary</a>
+                              <a class="f7 f6-ns fl  hover-bg-navy hover-white b--navy link ba pa2 ph3-l dib navy" href="#0">Discussion</a>
+                              <a class="f7 f6-ns fl  hover-bg-navy hover-white b--navy link bb bt pa2 ph3-l dib navy br2 br--right br" href="#0">Activity</a>
+                          </div> -->
+                        </div>
+                        <!-- <img src="http://tachyons.io/img/cat-720.jpg" class="w-100 db" alt="Closeup photo of a tabby cat yawning."> -->
+                        <div class="pa3 tl">
+                          <section class="pa2 bg-white ba br2 shadow">
+                            <a href="#" class="link navy f5 f4-ns fw6 dim lh-title tl">Aliquam volutpat vestibulum, Donec et hendrerit ipsum.</a>
+                            <p class="lh-copy f6 serif tl">
+                                Aenean quis nisi felis. Curabitur imperdiet placerat, eget condimentum dui lobortis quis. 
+                            </p>
+                            <h4 class="f6 fw3 mb1 ttu tracked tc">More Details</h4>
+                          </section>
+
+                          <aside class="mv2 tc">
+                            <small class="dib pa2 green">
+                              <i data-feather="clock" class="f6 f4-ns v-mid"></i> 5 days left
+                            </small>
+
+                            <small class="dib pa2 green">
+                                <i data-feather="crosshair" class="f6 f4-ns v-mid"></i> 20 people
+                            </small>
+
+                            <small class="dib pa2 green">
+                                <i data-feather="users" class="f6 f4-ns v-mid"></i> 4 spaces free
+                            </small>
+                          </aside>
+
+                          <div class="bg-moon-gray br-pill h1 overflow-y-hidden ma3">
+                              <div class="bg-green br-pill h1 shadow-1 w-75" ></div>
+                          </div>
+
+                          <aside class="mv2 tc">
+
+                          <a class="tc bb--w2 f7 f6-ns fw7 no-underline grow dib v-mid navy ba b--black-60 br-pill ph3 ph4-ns pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css"> 
+                            <i data-feather="star" class="f6 f5-ns v-mid"></i>  Interested
+                          </a>
+
+                          <a class="tc bb--w2 f7 f6-ns fw7 no-underline grow dib v-mid navy ba b--black-60 br-pill ph3 ph4-ns pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css"> 
+                            <i data-feather="bookmark" class="f6 f5-ns v-mid"></i>  Follow
+                          </a>
+                          
+                          <!-- <a class="tc w-33 dib fl f7 f6-ns fw7 no-underline v-mid navy br-pill ttu ph3 pv2 mt4 mb0" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css"> 
+                            <i data-feather="arrow-left" class="f6 f5-ns v-mid"></i> Prev
+                          </a>
+                          <a class="tc w-33 dib fr f7 f6-ns fw7 no-underline v-mid navy br-pill ttu b--black-60 ph3 pv2 mt4 mb0" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css"> 
+                            Next <i data-feather="arrow-right" class="f6 f5-ns v-mid"></i>
+                          </a> -->
+
+                        </aside>
+                        </div>
+
+                        <a class="tc cf db f7 f6-ns fw7 no-underline v-mid bg-black-10 navy bt ph4 pv3 mt3 mb0" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css"> 
+                          View all
+                        </a>
+                    </div>
+
+                  </section>
+
+              </section>
+
+            </section>
+
+<!-- 
+              <section class="fl w-100 w-50-l">
+        <pre class="pre" style="overflow: auto"><code class="code f6 dib pa2 bg-navy washed-green">git clone https://github.com/lorcanblake/Service.git
+        cd Service
+        npm i
+        ng serve --o
+        </code></pre>
+              </section>
+              <section class="fl w-100 w-50-l">
+        <pre class="pre" style="overflow: auto"><code class="code f6 dib pa2 bg-navy washed-green">git clone https://github.com/lorcanblake/Service-business.git
+        cd Service-business
+        npm i
+        ng serve --o
+        </code></pre>
+            </section> -->
+            </section>
+        
+          <section class="bt b--black-10 pv4 pv5-ns mt5 cf" id="pitch">
+            <div class="fl w-100 w-50-l pr4-ns">
+              <h3 class="mt0 f5 f3-ns pb3"><span class="pb1 bb bw2 b--green">Create a New Pitch</span></h3>
+              <form class="pa2 navy">
+              <div class="measure mb2">
+                  <label for="name" class="f6 b db mb2">Title <span class="normal black-60">(required)</span></label>
+                  <input id="name" class="input-reset ba b--navy pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
+                  <small id="name-desc" class="f6 black-60 db mb2">Helper text for the form control.</small>
+                </div>
+                <div class="measure">
+                  <label for="comment" class="f6 b db mb2">Description <span class="normal black-60">(optional)</span></label>
+                  <textarea id="comment" name="comment" class="db border-box hover-black w-100 measure ba b--navy pa2 br2 mb2" aria-describedby="comment-desc"></textarea>
+                  <small id="comment-desc" class="f6 black-60">Helper text for a form control. Can use this text to <a href="#" class="link underline black-80 hover-blue">link to more info.</a></small>
+                </div>
+              </form>
+            </div>
+        
+        
+            <div class="fl w-100 w-50-l pr4-ns pv4 pt0-l">
+              <h3 class="f5 f3-ns mt0 pb3"><span class="pb1 bb bw2 b--green">Create a New Offer</span></h3>
+              <form class="pa2 navy">
+                <div class="measure mb2">
+                    <label for="name" class="f6 b db mb2">Title <span class="normal black-60">(required)</span></label>
+                    <input id="name" class="input-reset ba b--navy pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
+                    <small id="name-desc" class="f6 black-60 db mb2">Helper text for the form control.</small>
+                  </div>
+                  <div class="measure">
+                    <label for="comment" class="f6 b db mb2">Description <span class="normal black-60">(optional)</span></label>
+                    <textarea id="comment" name="comment" class="db border-box hover-black w-100 measure ba b--navy pa2 br2 mb2" aria-describedby="comment-desc"></textarea>
+                    <small id="comment-desc" class="f6 black-60">Helper text for a form control. Can use this text to <a href="#" class="link underline black-80 hover-blue">link to more info.</a></small>
+                  </div>
+                </form>
+         
+            </div>
+          </section>
+        
+        
+          </div>
+        </article>
+        
+        <!-- <section _ngcontent-c1="">
+          <div _ngcontent-c1="" class="ph3 ph5-ns pt5">
+            <div _ngcontent-c1="" class="mw9 center overflow-auto">
+                <h3 _ngcontent-c1="" class="f4 fw7 ttc">Styleguide</h3>
+                <p _ngcontent-c1="" class="lh-copy measure serif">
+                  /// Styleguide intro copy 
+                </p>
+                <h3 _ngcontent-c1="" class="f6 ttu fw6 mb0 mt5 bb pb2">Typography</h3>
+              <article _ngcontent-c1="" class="dt-ns dt--fixed-ns">
+                <div _ngcontent-c1="" class="dtc-ns v-mid overflow-auto">
+                  <h1 _ngcontent-c1="" class="f1 lh-title">Level 1 Heading</h1>
+                  <h2 _ngcontent-c1="" class="f2 lh-title">Level 2 Heading</h2>
+                  <h3 _ngcontent-c1="" class="f3 lh-title">Level 3 Heading</h3>
+                  <h4 _ngcontent-c1="" class="f4 lh-title">Level 4 Heading</h4>
+                  <h5 _ngcontent-c1="" class="f5 lh-title">Level 5 Heading</h5>
+                  <h6 _ngcontent-c1="" class="f6 lh-title">Level 6 Heading</h6>
+                </div>
+                <div _ngcontent-c1="" class="dtc-ns v-mid">
+                    <pre _ngcontent-c1="" class="ba b--black-05  pa2 overflow-auto"><code _ngcontent-c1="" class="db f6 pa3 lh-copy">.f1 { font-size: 3rem; }
+        .f2 { font-size: 2.25rem; }
+        .f3 { font-size: 1.5rem; }
+        .f4 { font-size: 1.25rem; }
+        .f5 { font-size: 1rem; }
+        .f6 { font-size: .875rem; }
+        </code>
+        </pre>
+                </div>
+              </article>
+              <article _ngcontent-c1="" class="mt5">
+                  <h3 _ngcontent-c1="" class="f6 ttu fw6 mt0 mb3 bb pb2">Type Styles</h3>
+                  <div _ngcontent-c1="" class="dt-ns dt--fixed-ns">
+                    <div _ngcontent-c1="" class="dtc v-mid">
+                  <p _ngcontent-c1="" class="i">Italicize: to write or print (text) in italics.</p>
+                  <p _ngcontent-c1="" class="b">Some text that needs to be super bold.</p>
+                  <p _ngcontent-c1="" class="underline">This text wants to be underlined.</p>
+                  <p _ngcontent-c1="" class="strike">This text should be crossed out.</p>
+                  <p _ngcontent-c1="" class="ttc">This text should be capitalized.</p>
+                  <p _ngcontent-c1="" class="ttu">This text should be uppercase.</p>
+                </div>
+                <div _ngcontent-c1="" class="dtc-ns v-mid">
+        
+                </div>
+                  </div>
+                </article>
+        
+                <article _ngcontent-c1="" class="mt5">
+                  <h3 _ngcontent-c1="" class="f6 ttu fw6 mt0 mb3 bb pb2">Typefaces</h3>
+                  <div _ngcontent-c1="" class="dt-ns dt--fixed-ns">
+                    <div _ngcontent-c1="" class="dtc v-mid">
+            <h4 _ngcontent-c1="" class="f6 mb0 mt3">Serif ~ Merriweather</h4>
+                  <p _ngcontent-c1="" class="serif">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                  <p _ngcontent-c1="" class="serif ttu">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+            <h4 _ngcontent-c1="" class="f6 mb0 mt3">Sans-serif ~ Merriweather Sans</h4>
+                  <p _ngcontent-c1="" class="sans-serif"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                  <p _ngcontent-c1="" class="sans-serif ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+            <h4 _ngcontent-c1="" class="f6 mb0 mt3">Code</h4>
+                  <p _ngcontent-c1="" class="code"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                  <p _ngcontent-c1="" class="code ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                </div>
+                <div _ngcontent-c1="" class="dtc-ns v-mid">
+                </div>
+                  </div>
+                </article>
+                
+                
+                
+              </div>
+            </div>
+        </section> -->
+        
+        <footer class="bg-white navy ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+          <div class="mw9 center lh-copy">
+            <small class="f6 db tc">© 2018 <span class="ttu">5ervice Co</span>., All Rights Reserved</small>
+            <div class="tc mt3">
+              <a href="/credits/" title="Credits" class="f6 dib ph2 link navy dim">Credits</a>
+              <a href="/terms/" title="Terms" class="f6 dib ph2 link navy dim">FAQ</a>
+              <a href="/privacy/" title="Privacy" class="f6 dib ph2 link navy dim">Github</a>
+            </div>
+          </div>
+        </footer>
+        <script>
+          feather.replace()
+        </script>
+        </main>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Piwalo / Updates</title>
+<meta name="description" content="Pitch your idea for new services and group offers to the local people who can make them happen!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../etta/css/etta.min.css" />
+<meta name="theme-color" content="#2d3740">
+<link rel="shortcut icon" type="image/x-icon" href="../etta/assets/favicon.png">
+<link rel="apple-touch-icon" href="../etta/assets/favicon.png">
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700,900);
+</style>
+
+<body class="w-100 border-box sans-serif navy overflow-x-hidden">
+  <div etta-include="_prim-nav--sidebar.html"></div>
+  <div etta-include="_side-nav.html"></div>
+
+  <section id="main" onclick="closeNav()" class="ph2 ph5-l dt w-100 vh-100 pv2 fade">
+    <div class="v-mid mv4 pv4 ph2-ns mw6 center">
+
+      <h3 class="f5 f3-ns mt0 pt3 pt4-ns pb2 tc lh-copy">
+        <span class="pb1 bb bw2 b--pink">Updates</span>
+      </h3>
+
+      <article id="notif" class="center mw6 hidden ba b--black-20 br1 mv4">
+        <h1 class="f4 bg-black-05 mv0 pv2 ph3 tc lh-copy">
+          <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked blue ba">Open Call</div>
+        </h1>
+        <div class="pa3 bt b--black-20">
+          <h1 class="db f5 f4-ns mb2 lh-copy">
+            <a href="vendor-single.html" class="fw9 link navy bb bw2 b--blue">Vendor name</a> are looking for your help!
+          </h1>
+          <p class="serif f6 f5-ns lh-copy measure mv2">
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+          </p>
+          <aside class="center mt3 mb2">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--navy br2 ph3 pv2 mv2" href="pitch.html">
+              I've got an idea!
+              <i data-feather="chevron-right" class="v-mid"></i>
+            </a>
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid black-50 bn b--navy br2 ph3 pv2 mv2" onclick="dismiss();">
+              Dismiss
+            </a>
+          </aside>
+        </div>
+      </article>
+
+      <article class="center mw6 hidden ba b--black-20 br1 mv4">
+        <h1 class="f4 bg-black-05 mv0 pv2 ph3 tc">
+          <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked green ba">Accepted</div>
+        </h1>
+        <div class="pa3 bt b--black-20">
+          <h1 class="db f5 f4-ns mb2 lh-copy">
+            <a href="vendor-single.html" class="fw9 link navy bb bw2 b--green">Vendor name</a> has accepted your pitch!
+          </h1>
+          <p class="serif f6 f5-ns lh-copy measure mv2">
+            They may choose to further assess demand and/or seek funding from the community, in which case you'll be #1 on the list.
+          </p>
+          <aside class="center mt3 mb2">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="offer-single.html">
+              <i data-feather="plus" class="v-mid"></i> Join
+            </a>
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="offer-single.html">
+              View offer
+              <i data-feather="chevron-right" class="v-mid"></i>
+            </a>
+            <span class="tc bb--w2 no-underline w-auto dib v-mid black-50 bn b--navy br2 ph3 pv2 mv2" onclick="dismiss();">
+              Dismiss
+            </span>
+          </aside>
+        </div>
+      </article>
+
+      <article class="center mw6 hidden ba b--black-20 br1 mv4">
+        <h1 class="f4 bg-black-05 mv0 pv2 ph3 tc">
+          <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked navy ba">Seeking support</div>
+        </h1>
+        <div class="pa3 bt b--black-20">
+          <h1 class="db f5 f4-ns mb2 lh-copy">
+            Community member has just made a pitch!
+          </h1>
+          <p class="serif f6 f5-ns lh-copy measure mv2">
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." If a fund target
+            isn't reached you will be fully refunded within 30 days.
+          </p>
+          <aside class="center mt3 mb2">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--navy br2 ph3 pv2 mv2" href="pitch-single.html">
+              View pitch
+              <i data-feather="chevron-right" class="v-mid"></i>
+            </a>
+            <span class="tc bb--w2 no-underline w-auto dib v-mid black-50 bn b--navy br2 ph3 pv2 mv2" onclick="dismiss();">
+              Dismiss
+            </span>
+          </aside>
+        </div>
+      </article>
+
+      <article class="center mw6 hidden ba b--black-20 br1 mv4">
+        <h1 class="f4 bg-black-05 mv0 pv2 ph3 tc lh-copy">
+          <div class="dib pv1 ph1 mb0 fw4 f7 ttu tracked green fw6 bn">
+            Target demand reached!</div>
+          <div class="bg-moon-gray br-pill h1 overflow-y-hidden w-80 center mv2 mh3">
+            <div class="bg-green br-pill h1 shadow-1 w-100"></div>
+          </div>
+        </h1>
+        <div class="pa3 bt b--black-20">
+          <h1 class="db f5 f4-ns mb2 lh-copy">
+            Thanks to your support,
+            <a href="pitch-single.html" class="fw9 link navy bb bw2 b--green">Offer/Service</a> has reached it's target demand!
+          </h1>
+          <p class="f6 f5-ns lh-copy measure mv2">
+            Vendor will be in contact shortly. They may choose to fund the offer, in which case you've got priority booking!
+          </p>
+          <aside class="center mt3 mb2">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="offer-single.html">
+              <i data-feather="plus" class="v-mid"></i> Join
+            </a>
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="offer-single.html">
+              View offer
+              <i data-feather="chevron-right" class="v-mid"></i>
+            </a>
+            <span class="tc bb--w2 no-underline w-auto dib v-mid black-50 bn b--navy br2 ph3 pv2 mv2" onclick="dismiss();">
+              Dismiss
+            </span>
+          </aside>
+        </div>
+      </article>
+
+      <article class="center mw6 hidden ba b--black-20 br1 mv4">
+        <h1 class="f4 bg-black-05 mv0 pv2 ph3 tc lh-copy">
+          <div class="dib pv1 ph1 mb0 fw4 f7 ttu tracked pink fw6 bn">
+            100% funded!</div>
+          <div class="bg-moon-gray br-pill h1 overflow-y-hidden w-80 center mv2 mh3">
+            <div class="bg-pink br-pill h1 shadow-1 w-100"></div>
+          </div>
+        </h1>
+        <div class="pa3 bt b--black-20">
+          <h1 class="db f5 f4-ns mb2 lh-copy">
+            Thanks to your support,
+            <a href="offer-single.html" class="fw9 link navy bb bw2 b--pink">Offer/Service</a> has been fully funded!
+          </h1>
+          <p class="serif f6 f5-ns lh-copy measure mv2">
+            Vendor will be in contact shortly.
+          </p>
+          <aside class="center mt3 mb2">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="offer-single.html">
+              <i data-feather="plus" class="v-mid"></i> Join
+            </a>
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="offer-single.html">
+              View offer
+              <i data-feather="chevron-right" class="v-mid"></i>
+            </a>
+            <span class="tc bb--w2 no-underline w-auto dib v-mid black-50 bn b--navy br2 ph3 pv2 mv2" onclick="dismiss();">
+              Dismiss
+            </span>
+          </aside>
+        </div>
+      </article>
+
+      <article class="center mw6 hidden ba b--black-20 br1 mv4">
+        <h1 class="f4 bg-black-05 mv0 pv2 ph3 tc lh-copy">
+          <div class="dib pv1 ph1 mb0 fw4 f7 ttu tracked yellow fw6 bn">
+            Stale</div>
+          <div class="bg-moon-gray br-pill h1 overflow-y-hidden w-80 center mv2 mh3">
+            <div class="bg-yellow br-pill h1 shadow-1 w-20"></div>
+          </div>
+        </h1>
+        <div class="pa3 bt b--black-20">
+          <h1 class="db f5 f4-ns mb2 lh-copy">
+            There hasn't been much activity on
+            <a href="pitch-single.html" class="fw9 link navy bb bw2 b--yellow">your pitch</a> lately
+          </h1>
+          <p class="serif f6 f5-ns lh-copy measure mv2">
+            Why not update it and seek support from the community!
+          </p>
+          <aside class="center mt3 mb2">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--navy br2 ph3 pv2 mv2" href="pitch-single.html">
+              Update pitch
+              <i data-feather="chevron-right" class="v-mid"></i>
+            </a>
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--navy br2 ph3 pv2 mv2" href="pitch-single.html">
+              <i data-feather="share-2" class="v-mid"></i> Share pitch
+            </a>
+            <span class="tc bb--w2 no-underline w-auto dib v-mid black-50 bn b--navy br2 ph3 pv2 mv2" onclick="dismiss();">
+              Dismiss
+            </span>
+          </aside>
+        </div>
+      </article>
+
+      <article class="center mw6 hidden ba b--black-20 br1 mv4">
+        <h1 class="f4 bg-black-05 mv0 pv2 ph3 tc lh-copy">
+          <div class="dib pv1 ph1 mb0 fw4 f7 ttu tracked green fw6 bn">
+            Only 6 more people needed!</div>
+          <div class="bg-moon-gray br-pill h1 overflow-y-hidden w-80 center mv2 mh3">
+            <div class="bg-green br-pill h1 shadow-1 w-75"></div>
+          </div>
+        </h1>
+        <div class="pa3 bt b--black-20">
+          <p class="serif f6 f5-ns lh-copy measure mv2">
+            Know anyone that would be interested in this offer?
+          </p>
+          <aside class="center mt3 mb2">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--navy br2 ph3 pv2 mv2" href="pitch-single.html">
+              <i data-feather="share-2" class="v-mid"></i> Share pitch
+            </a>
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--navy br2 ph3 pv2 mv2" href="pitch-single.html">
+              View pitch
+              <i data-feather="chevron-right" class="v-mid"></i>
+            </a>
+            <span class="tc bb--w2 no-underline w-auto dib v-mid black-50 bn b--navy br2 ph3 pv2 mv2" onclick="dismiss();">
+              Dismiss
+            </span>
+          </aside>
+        </div>
+      </article>
+
+      <article class="center mw6 hidden ba b--black-20 br1 mv4">
+        <h1 class="f4 bg-black-05 mv0 pv2 ph3 tc">
+          <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked navy fw6 bn">
+            <i data-feather="star" class="w1 h1 v-mid"></i> 33 people have saved your service pitch!</div>
+        </h1>
+        <div class="pa3 bt b--black-20">
+          <p class="serif f6 f5-ns lh-copy measure mv2">
+            You've got support. Why not ask a vendor to consider it?
+          </p>
+          <aside class="center mt3 mb2">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--navy br2 ph3 pv2 mv2" href="pitch-single.html">
+              <i data-feather="link-2" class="v-mid"></i> Request a review
+
+            </a>
+            <span class="tc bb--w2 no-underline w-auto dib v-mid black-50 bn b--navy br2 ph3 pv2 mv2" onclick="dismiss();">
+              Dismiss
+            </span>
+          </aside>
+        </div>
+      </article>
+
+      <article class="center mw6 hidden ba b--black-20 br1 mv4">
+        <h1 class="f4 bg-black-05 mv0 pv2 ph3 tc lh-copy">
+          <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked navy fw6 bn">
+            <i data-feather="message-square" class="w1 h1 v-mid"></i>
+            <span class="pb1 bb b--pink">Michael</span> replied to your comment</div>
+        </h1>
+        <div class="pa3 bt b--black-20">
+          <p class="serif f6 f5-ns lh-copy measure mv2">
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+          </p>
+          <aside class="center mt3 mb2">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--navy br2 ph3 pv2 mv2" href="pitch-single.html">
+              <i data-feather="corner-down-right" class="v-mid"></i> Reply
+            </a>
+            <span class="tc bb--w2 no-underline w-auto dib v-mid black-50 bn b--navy br2 ph3 pv2 mv2" onclick="dismiss();">
+              Dismiss
+            </span>
+          </aside>
+        </div>
+      </article>
+
+  </section>
+
+  <div etta-include="_footer.html"></div>
+  <script src="../etta/js/e-include.js"></script>
+  <script src="../etta/js/e-nav-active.js"></script>
+  <script src="../etta/js/e-dismiss-notification.js"></script>
+  <script src="../etta/js/e-side-nav.js"></script>
+  <script src="../etta/js/icons.min.js"></script>
+  <script>
+    injectComponents();
+  </script>
+</body>
+
+</html>

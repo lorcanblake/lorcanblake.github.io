@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Piwalo / Register</title>
+<meta name="description" content="Pitch your idea for new services and group offers to the local people who can make them happen!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../etta/css/etta.min.css" />
+<meta name="theme-color" content="#2d3740">
+<link rel="shortcut icon" type="image/x-icon" href="../etta/assets/favicon.png">
+<link rel="apple-touch-icon" href="../etta/assets/favicon.png">
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700,900);
+
+  .list a:hover {
+    font-weight: 600;
+  }
+</style>
+
+<body class="w-100 border-box sans-serif navy">
+
+  <div etta-include="_prim-nav--forms.html"></div>
+
+  <section class="ph3 ph5-l dt w-100 vh-100 pv2 fade">
+    <div class="dtc v-mid tc mv4 pv4 ph3 mw9 center ">
+
+      <article class="ma0 pv3 ph1 pa5-ns center mw6 bn">
+        <a class="db dn-ns mb1" href="#" title="Piwalo home">
+          <img class="rotate shadow dib w32 h32 br-100 v-mid" src="../etta/assets/favicon.png" title="Piwalo logo">
+        </a>
+        <span class="f6 no-underline navy pv2 db tc">Step 3 of 5 </span>
+        <h1 class="f4 bold tc mb4">
+          <span class="bb bw2 b--pink lh-copy">What kind of services are you interested in?</span>
+        </h1>
+
+
+        <ul class="list pl0 ml0 center tl mw6 ba b--light-silver br2 f6 f5-ns ">
+          <li class="ph3 pv3 bb b--light-silver b">Automotive
+            <i data-feather="check" class="f6 f5-ns v-mid fr"></i>
+          </li>
+          <li class="ph3 pv3 bb b--light-silver">
+            <a class="link navy" onclick="select(this)">Entertainment</a>
+            <i data-feather="check" id="check" class="dn f6 f5-ns v-mid fr"></i>
+          </li>
+          <li class="ph3 pv3 bb b--light-silver b">Food &amp; Drink
+            <i data-feather="check" class="f6 f5-ns v-mid fr"></i>
+          </li>
+          <li class="ph3 pv3 bb b--light-silver">
+            Hair &amp; Beauty
+          </li>
+          <li class="ph3 pv3 bb b--light-silver">Health </li>
+          <li class="ph3 pv3 bb b--light-silver b">Home
+            <i data-feather="check" class="f6 f5-ns v-mid fr"></i>
+          </li>
+          <li class="ph3 pv3 bb b--light-silver b">Petcare
+            <i data-feather="check" class="f6 f5-ns v-mid fr"></i>
+          </li>
+          <li class="ph3 pv3">Training and Education </li>
+        </ul>
+
+        <span class="f6 no-underline navy pv2 db tc mb3">
+          <span class="dib dn-ns">Tap</span>
+          <span class="dn dib-ns">Click</span> on a category to select it. You can change these at any time. </span>
+        <a class="shadow tc f7 f6-ns fw7 no-underline dib v-mid bg-white navy ba b--navy br-pill ph4 pv2 mv3" href="register-2.html">
+          <i data-feather="chevron-left" class="f6 f5-ns v-mid"></i> Back
+        </a>
+        <a class="shadow grow tc f7 f6-ns fw7 no-underline dib v-mid bg-navy white ba b--navy br-pill ph4 pv2 mv3" href="register-4.html">
+          Continue
+          <i data-feather="chevron-right" class="f6 f5-ns v-mid"></i>
+        </a>
+      </article>
+
+      <!-- <a class="shadow f7 f6-ns fw7 no-underline grow dib v-mid navy ba b--black-60 br-pill ph4 pv2 mb3" href="#categories"> 
+                <i data-feather="book" class="f6 f5-ns v-mid"></i>  View Categories
+              </a> -->
+    </div>
+  </section>
+
+  <div etta-include="_footer.html"></div>
+  <script src="../etta/js/e-include.js"></script>
+  <!-- <script src="../etta/js/e-side-nav.js"></script> -->
+  <!-- <script src="../etta/js/e-check-list.js"></script> -->
+  <script src="../etta/js/icons.min.js"></script>
+  <script>
+    injectComponents();
+  </script>
+    <script src="../etta/js/e-check-list.js"></script>
+</body>
+</html>
