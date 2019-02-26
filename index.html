@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://unpkg.com/tachyons/css/tachyons.min.css"
     />
-    <!-- <link rel="stylesheet" href="tachyons.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/tachyons.min.css"> -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Archivo:400,400i,700"
@@ -87,14 +87,14 @@
           opacity: 1;
         }
       }
-      .rotate {
+      /* .rotate {
         -webkit-transition: -webkit-transform 0.8s ease-in-out;
         transition: transform 0.8s ease-in-out;
       }
       .rotate:hover {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
-      }
+      } */
       .grayscale {
         filter: grayscale(1);
       }
@@ -137,6 +137,7 @@
   <body class="fade w-100 vh-100 ff trl bg-transparent min-vh-25-l">
     <section class="tc pa3 pa6-ns">
       <article class="hide-child relative bn mw8 center">
+        <!-- START header -->
         <span
           title="..photography, visual design and front-end design systems"
           class="link black b ttu f4 db mb3"
@@ -148,14 +149,15 @@
             <span class="bg-black hover-bg-transparent">May 2019</span>
           </small>
         </aside>
-        <main class="siema">
-
+        <!-- END header -->
+        <!-- START carousel -->
+        <main class="carousel">
           <div class="mt4 pa2 pb4-l ba b--black-70 grayscale">
             <article class="w-100 mw6-ns center pt2 pt4-ns">
               <div class="aspect-ratio aspect-ratio--6x4 mb4 ba b--black-10">
                 <div
                   class="aspect-ratio--object cover"
-                  style="background:url('images/01.png') center;"
+                  style="background:url('img/01.png') center;"
                 ></div>
               </div>
             </article>
@@ -165,7 +167,7 @@
                 class="athelas tl ml0 mt0 pl3 pl4-ns black-90 bl bw2 b--blue"
               >
                 <p class="f6 f5-m f4-l lh-copy measure mt0">
-                  A localised open innovation ecoystem named Piwalo. 
+                  A localised open innovation ecoystem named Piwalo.
                 </p>
                 <cite class="f7 f6-ns ttu tracked fs-normal"
                   >Front-end development, Design systems, Thesis</cite
@@ -179,7 +181,7 @@
               <div class="aspect-ratio aspect-ratio--6x4 mb4 ba b--black-10">
                 <div
                   class="aspect-ratio--object cover"
-                  style="background:url('images/02.png') center;"
+                  style="background:url('img/02.png') center;"
                 ></div>
               </div>
             </article>
@@ -189,7 +191,8 @@
                 class="athelas tl ml0 mt0 pl3 pl4-ns black-90 bl bw2 b--blue"
               >
                 <p class="f6 f5-m f4-l lh-copy measure mt0">
-                  A collaboration-centred <em class="i">wiki</em> in honour of Rory Gallagher.
+                  A collaboration-centred <em class="i">wiki</em> in honour of
+                  Rory Gallagher.
                 </p>
                 <cite class="f7 f6-ns ttu tracked fs-normal"
                   >Front-end development, Product design</cite
@@ -203,7 +206,7 @@
               <div class="aspect-ratio aspect-ratio--6x4 mb4 ba b--black-10">
                 <div
                   class="aspect-ratio--object cover"
-                  style="background:url('images/03.png') center;"
+                  style="background:url('img/03.png') center;"
                 ></div>
               </div>
             </article>
@@ -224,9 +227,12 @@
 
           <div class="mw8 center mv4 pa2 pb6-ns ba b--black-70 ">
             <div class="dtc v-mid tc ph3 pa4-l ma2-l mt4 mt5-l">
-              <h1  class="mt3 mt5-m mt1-l pb1 f4 f3-m f1-l black-90 i">Lorcan Blake</h1>
+              <h1 class="mt3 mt5-m mt1-l pb1 f4 f3-m f1-l black-90 i">
+                Lorcan Blake
+              </h1>
               <p class="f5 f4-m f2-l fw1 tc black-90">
-                LSAD LIT '19. Currently <a
+                LSAD LIT '19. Currently
+                <a
                   href="https://piwalo.github.io/"
                   class="black link dim"
                   target="_blank"
@@ -238,58 +244,59 @@
                 prototypes.
               </p>
             </div>
-<aside class="mv2 pb3">
-            <a
-              href="mailto:lorcanblake@hotmail.com"
-              class="link tc ph3 pv2 dib ba bb--w3 bg-white dim black-90 f6 f4-l br1 mb2"
-              >Email &raquo;</a
-            >
-            <a
-              href="https://are.na/lorcan-blake"
-              class="link tc ph3 pv2 dib ba bb--w3 bg-white dim black-90 f6 f4-l br1 mb2"
-              target="_0"
-              >Research space &raquo;</a
-            >
-            <a
-              href="https://instagram.com/lorcanblake"
-              class="link tc ph3 pv2 dib ba bb--w3 bg-white dim black-90 f6 f4-l br1 mb2"
-              target="_0"
-              >Photography &raquo;</a
-            >
-          </aside>
+            <aside class="mv2 pb3">
+              <a
+                href="mailto:lorcanblake@hotmail.com"
+                class="link tc ph3 pv2 dib ba bb--w3 bg-white dim black-90 f6 f4-l br1 mb2"
+                >Email &raquo;</a
+              >
+              <a
+                href="https://are.na/lorcan-blake"
+                class="link tc ph3 pv2 dib ba bb--w3 bg-white dim black-90 f6 f4-l br1 mb2"
+                target="_0"
+                >Research space &raquo;</a
+              >
+              <a
+                href="https://instagram.com/lorcanblake"
+                class="link tc ph3 pv2 dib ba bb--w3 bg-white dim black-90 f6 f4-l br1 mb2"
+                target="_0"
+                >Photography &raquo;</a
+              >
+            </aside>
           </div>
 
-          <!-- <div class="mw8 center mv4 pa2 pb3-ns ba b--black-70 ">
+          <!-- 
+            * TESTING * 
+            START feed -->
+
+          <div class="mw8 center mv4 pa2 pb3-ns ba b--black-70 ">
             <article class="cf ph3 ph5-ns pv5 tl">
               <header class="fn fl-ns w-50-ns pr4-ns">
-                <h1 class="mb3 mt0 lh-title">Clay in a Potter's Hand</h1>
-                <time class="f6 ttu tracked gray">Born 1995</time>
+                <h1 class="mb3 mt0 lh-title">Research feed</h1>
+                <time class="f6 ttu tracked gray">via are.na</time>
               </header>
               <div class="fn fl-ns w-50-ns serif">
                 <p class="lh-copy measure mt4 mt0-ns">
-                  PERFECT typography is more a science than an art. Mastery of the trade is
-                  indispensable, but it isn't everything. Unerring taste, the hallmark of
-                  perfection, rests also upon a clear understanding of the laws of harmonious
-                  design. As a rule, impeccable taste springs partly from inborn sensitivity:
-                  from feeling. But feelings remain rather unproductive unless they can inspire a
-                  secure judgment. Feelings have to mature into knowledge about the consequences
-                  of formal decisions. For this reason, there are no born masters of typography,
-                  but self- education may lead in time to mastery.
+                  PERFECT typography is more a science than an art. Mastery of
+                  the trade is indispensable, but it isn't everything. Unerring
+                  taste, the hallmark of perfection, rests also upon a clear
+                  understanding of the laws of harmonious design. As a rule,
+                  impeccable taste springs partly from inborn sensitivity: from
+                  feeling. But feelings remain rather unproductive unless they
+                  can inspire a secure judgment.
                 </p>
                 <p class="lh-copy measure">
-                  It is wrong to say that there is no arguing about taste when it is good taste
-                  that is in question. We are not born with good taste, nor do we come into this
-                  world equipped with a real understanding of art. Merely to recognize who or
-                  what is represented in a picture has little to do with a real under- standing
-                  of art. Neither has an uninformed opinion about the proportions of Roman
-                  letters. In any case, arguing is senseless. He who wants to convince has to
-                  do a better job than others.
+                  It is wrong to say that there is no arguing about taste when
+                  it is good taste that is in question. We are not born with
+                  good taste, nor do we come into this world equipped with a
+                  real understanding of art.
                 </p>
               </div>
             </article>
-            
-          </div> -->
+          </div>
+          <!-- END feed-->
         </main>
+        <!-- START pagination -->
         <aside class="fixed bottom-2 mw6 center tc b ba bg-white z-max">
           <button
             class="prev pointer ph2 pv3 bg-white link black bn b--black-70 br-pill left-0 fw1 i"
@@ -304,17 +311,18 @@
             next
           </button>
         </aside>
+        <!-- END pagination -->
       </article>
     </section>
 
-    <script src="siema.min.js"></script>
+    <script src="js/siema.min.js"></script>
     <script>
       function printSlideIndex() {
         document.querySelector(".js-index").innerHTML = this.currentSlide + 1;
       }
 
-      mySiema = new Siema({
-        selector: ".siema",
+      s = new Siema({
+        selector: ".carousel",
         duration: 200,
         easing: "ease-out",
         perPage: 1,
@@ -328,22 +336,18 @@
         onChange: printSlideIndex
       });
 
-      document
-        .querySelector(".prev")
-        .addEventListener("click", () => mySiema.prev());
-      document
-        .querySelector(".next")
-        .addEventListener("click", () => mySiema.next());
+      document.querySelector(".prev").addEventListener("click", () => s.prev());
+      document.querySelector(".next").addEventListener("click", () => s.next());
 
       // listen for keydown event
       document.addEventListener("keydown", e => {
-        // if it's left arrow key
+        // left
         if (e.keyCode === 37) {
-          mySiema.prev();
+          s.prev();
         }
-        // if it's right arrow key
+        // right
         else if (e.keyCode === 39) {
-          mySiema.next();
+          s.next();
         }
       });
     </script>
