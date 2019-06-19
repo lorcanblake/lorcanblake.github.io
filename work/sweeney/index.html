@@ -12,49 +12,124 @@
       href="https://unpkg.com/tachyons/css/tachyons.min.css"
     />
     <style>
+      @import url('https://fonts.googleapis.com/css?family=Rasa|Roboto&display=swap');
+      .serif{
+        font-family: 'Rasa', serif;
+      }
+      .sans-serif{
+        font-family: 'Roboto', sans-serif;
+      }
+
       .rotate{
         transform: rotate(-2deg);
       }
       .t-shadow{
         text-shadow: rgb(0, 0, 0) 1px 0 10px;
       }
+
+      .mt-10vh{
+        margin-top: 20vh;
+      }
+
+      .trans-3{
+        transition-duration: 3s;
+      }
     </style>
       <script src="js/feather.min.js"></script>
       <script src="js/smooth-scroll.polyfills.min.js"></script>
+      <script src="js/siema.min.js"></script>
 
 
   </head>
   <body class="w-100 sans-serif white bg-white">
       <nav class="z-max bg-blue w-100 fixed flex justify-between bb b--white-10 shadow">
-          <a class="link white-70 hover-white no-underline flex items-center pa3" href="#">
+          <a class="link white-70 hover-white no-underline flex items-center pa3 " href="#">
            <img src="img/logo-inverse-graphic.png" class="h2 rotate">
           </a>
           <div class="flex-grow ph2 pv3 pa3-ns flex items-center">
-            <a class="f7 f6-ns link dib white dim mr2 mr4-l" href="#services">Services</a>
-            <a class="f7 f6-ns link dib white dim mr2 mr4-l" href="#testimonials">Testimonials</a>
-            <a class="f7 f6-ns dib white grow no-underline pa2 ph4-ns br-pill ba b--white-20" href="tel:0858072130"><i data-feather="phone" class="w1 h1 v-mid"></i> Call Anthony</a>
+            <!-- <a class="f7 f6-m f4-l link dib white dim mr2 mr4-l" href="#services">Services</a>
+            <a class="f7 f6-m f4-l link dib white dim mr2 mr4-l" href="#testimonials">Testimonials</a> -->
+            <a class="f7 f6-m f4-l dib white no-underline pa2 pa3-l br3 ba b--white-40" onclick="toggleMenu();"><i data-feather="menu" class="white w1 h1 v-mid"></i> Menu</a>
           </div>
         </nav>
-    <article data-name="dt vh-100 article-full-bleed-background">
+
+
+        <div
+        id="side-nav"
+        class="vh-100 fixed z-1 top-0 left-0 bg-blue verflow-x-hidden w-100"
+      >
+        <div class="pa4-l mt4 mt2-l mt-10vh">
+          <div class="flex flex-column dt border-box w-80 center w-100-l f4 f3-m f2-l">
+            <a
+              class="shadow fw7 no-underline dib dtc v-mid white br1 pa2 pa3-ns mb1 mb3-ns w-100 tc"
+              href="#services"  onclick="toggleMenu();"
+            >
+              <span class="center tc">
+               
+               Services
+              </span>
+            </a>
+            <a
+              class="shadow fw7 no-underline db dtc v-mid white br1 pa2 pa3-ns mb1 mb3-ns w-100 mr2 tc"
+              href="#testimonials"  onclick="toggleMenu();"
+            >
+              <span class="center tc">
+
+                Testimonials
+              </span>
+            </a>
+      
+            <a
+              class="shadow fw7 no-underline db dtc v-mid white br1 pa2 pa3-ns mb1 mb3-ns w-100 tc"
+              href="#suppliers"  onclick="toggleMenu();"
+            >
+              <span class="center tc">
+                Suppliers
+              </span>
+            </a>
+      
+            <a
+              class="shadow fw7 no-underline db dtc v-mid white br1 pa2 pa3-ns mb1 mb3-ns w-100 tc"
+              href="#location"  onclick="toggleMenu();"
+            >
+              <span class="center tc">
+      
+                Location
+              </span>
+            </a>
+      
+         
+            <aside class="center mt4 mb2">
+              <a
+                class="shadow f7 f6-ns fw3 no-underline dib v-mid bg-white-10 white br-pill ph4 pv2 mb3 ttu"
+                onclick="toggleMenu();"> <i data-feather="x" class="v-mid"></i>
+      Close menu        </a>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+
+    <article id="main">
       <div
-        class="cf vh-100"
+        class="cf min-vh-100"
         style="background: url(img/bg.png) no-repeat center center fixed; background-size: cover;"
       >
-        <div class="vh-100 dtc v-mid mw6 center fl pa3 pa5-ns  f3">
+        <div class="min-vh-100 dtc v-mid mw6 center fl pa3 pa5-ns  f3">
           <header class="bb b--white-90 pv5">
             <h3 class="f2 fw7 ttu tracked lh-title mt3 mt2-l mb3 avenir">
                 <!-- <img src="img/logo-inverse-graphic.png" class="w-100" style="filter:invert(1);"> -->
                 <img src="img/logo-inverse-graphic.png" class="w-100 rotate">
 
             </h3>
-            <h4 class="f3 fw4 i lh-title mt0 serif">
+            <h4 class="f3 f2-l fw4 i lh-title mt0 serif">
               Camper and Caravan Repairs
             </h4>
-            <h5 class="f5 fw4 lh-title mt0">
+            <h5 class="f5 f4-l fw4 lh-title mt0">
               Old Dublin Road, Barnora, Cahir, Co. Tipperary
             </h5>
             <a class="f6 f5-m f4-l grow no-underline br-pill bw2 ph3 pv2 mb2 dib white b--blue bg-blue v-mid" href="tel:0858072130"><i data-feather="phone" class="v-mid"></i> 085 8072130 </a>
-            <a class="f6 f5-m f4-l grow no-underline br-pill bw2 ph3 pv2 mb2 dib white b--blue bg-blue v-mid" href="#map" target="_blank"><i data-feather="map-pin" class="v-mid"></i> View on maps </a>
+            <a class="f6 f5-m f4-l grow no-underline br-pill bw2 ph3 pv2 mb2 dib white b--blue bg-blue v-mid" href="#location" target="_blank"><i data-feather="map-pin" class="v-mid"></i> View on maps </a>
 
           </header>
           <section class="pt4 pb4">
@@ -78,7 +153,7 @@ SUN.	<em class="i">closed</em>
           <!-- <div class="vh-75 cover bg-center" style="background-image: url(http://mrmrs.github.io/photos/001.jpg);"></div> -->
           <div class="ph4 ph5-m ph6-l pv3" id="services">
             <div class="pv5 f4 f2-ns measure center">
-              <h1 class="fw6 f1 fl w-100 black mt0 mb3 avenir">Our Services</h1>
+              <h1 class="fw6 f1 fl w-100 black mv3 avenir">Our Services</h1>
               <p class="db lh-copy black serif fw1 mv0 f4 f3-m f2-l measure baskerville">
                   We are a family run business with many years experience in the leisure vehicle industry.
                   We specialize in the service and repair of campers and caravans
@@ -108,24 +183,24 @@ SUN.	<em class="i">closed</em>
            
             <div class="ph4 ph5-m ph6-l pv3" id="testimonials">
                 <div class="pv5 f4 f2-ns measure center">
-                  <h1 class="fw6 f1 fl w-100 black mt0 mb3 avenir tc">What do our customers have to say?</h1>
+                  <h1 class="fw6 f4 fl-l w-100 black mv3 pt2 avenir tc">What do our customers have to say?</h1>
                   <!-- <p class="db lh-copy black serif fw1 mv0 f4 f3-m f2-l measure baskerville">
                       We are a family run business with many years experience in the leisure vehicle industry.
                       We specialize in the service and repair of campers and caravans
                   </p>
                 </div> -->
-            <blockquote class="mh0 pr0 mv4 pt5 mw7 center">
-              <p class="f3 f2-l fw1 mv0 tc lh-title baskerville">
+            <blockquote class="f5 f4-m f3-l mh0 pr0 mv4 pt5 mw7 center tl tc-l">
+              <p class=" fw1 mv0 lh-title baskerville">
                 “We can't thank you enough for fixing our daughter's van during the night. We are so appreciative of this especially because they are traveling in the van. Fantastic service, absolutely brilliant. Will recommend you to all our friends.”
               </p>
-              <p class="tc f6 gray">
+              <p class="f6 gray">
                 Beverley
               </p>
-              <p class="f3 f2-l fw1 mv0 tc lh-title baskerville">
+              <p class="fw1 mv0 lh-title baskerville">
                 “A top class service..I can't fault their work, attention to detail or customer service. The guys at Sweeney camper and caravan repairs bent over backwards to get us back on the road in time for our trip to the Euros.
                 Thanks again guys!”
               </p>
-              <p class="tc f6 gray">
+              <p class="f6 gray">
                 Danny
               </p>
 
@@ -137,7 +212,7 @@ SUN.	<em class="i">closed</em>
                 There's an unspoken shadow over the stories about that town house on Essex Drive. James Jordan remodeled the basement for his son. Did all the work himself, because he'd never let Michael pay for something he could do on his own. The first winter, while Michael was out of town for the All-Star Game, his pipes froze. His dad ripped out the walls, replacing the pipes himself, patching and repainting when he finished. He spent two weeks fixing his son's home. James and Mike -- that's where all this nostalgia has been headed, from the moment it began.
               </p> -->
               <div class="aspect-ratio aspect-ratio--16x9 mv6">
-                <iframe src="https://www.youtube.com/embed/52PWF87nDRI" class="aspect-ratio--object" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <!-- <iframe src="https://www.youtube.com/embed/52PWF87nDRI" class="aspect-ratio--object" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
               </div>
             </div>
           </div>
@@ -163,7 +238,7 @@ SUN.	<em class="i">closed</em>
             <div class="grow cover bg-center pv5 pv7-l" style="background-image:url(img/eg.jpg);"></div>
           </a>
         </section>
-        <section class="mw9 mb6 pv5 center cf" id="map">
+        <section class="mw9 mb6 pv5 center cf" id="location">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1217.676201889829!2d-7.920357023870626!3d52.38216163212129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48433210f09b3dab%3A0xc34988b728c67898!2sSweeney+Camper+and+Caravan+Repairs!5e0!3m2!1sen!2sie!4v1560519464007!5m2!1sen!2sie" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
       </main>
@@ -180,6 +255,22 @@ SUN.	<em class="i">closed</em>
     <script>
         feather.replace();
         var scroll = new SmoothScroll('a[href*="#"]');
+
+        var primNav = document.getElementById("prim-nav");
+        var sideNav = document.getElementById("side-nav");
+        sideNav.style.display = "none";
+
+        function toggleMenu(){
+
+          if (sideNav.style.display === "none") {
+                  sideNav.style.display = "block";
+        } else {
+          sideNav.style.display = "none";
+        }
+
+        }
+
+
       </script>
   </body>
 </html>
