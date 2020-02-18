@@ -1,3 +1,1 @@
-## Portfolio Site
-
-[View site](http://lorcanblake.github.io)
+## [CLICK](http://lorcanblake.github.io)
