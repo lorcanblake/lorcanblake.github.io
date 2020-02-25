@@ -30,7 +30,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Archivo:400,400i,700"
     />
-
     <style>
       /* Overrides and Custom Utilities */
     
@@ -139,7 +138,7 @@
 <body class="fade w-100 vh-100 ff trl bg-light-blue min-vh-25-l">
       
 <article class="pa3 pa5-ns">
-<img class="mw4 dib" src="cap.png">    
+<img id="cap" class="mw4 dib" src="cap.png" onclick="switchCap()">    
 </article>
 
 <article class="cf ph3 ph5-ns pv3 pv5-ns">
@@ -224,6 +223,16 @@
         </p>
     </div>
 </article>
-
+<script>
+var counter = 0,
+    hats = ["cap02.png", "cap03.png", "cap04.png"],
+    switchHat = function () {
+        document.getElementById("cap").src = hats[counter];
+        counter++;
+        if (counter >= hats.length) {
+            counter = 0;
+        }
+    };
+</script>
 </body>    
 </html>
