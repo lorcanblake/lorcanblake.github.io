@@ -40,6 +40,10 @@
       .trl {
         text-rendering: optimizeLegibility;
       }
+      
+      .bg-light-yellow{
+        background-color: rgb(231, 255, 150);
+      }
     
       .list li:before {
         content: "\02014";
@@ -50,13 +54,9 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92779594-1"></script>
     </head>
     
-<body class="mw6 center vh-100 sans-serif trl bg-light-blue min-vh-25-l">
-      
-<article class="pa3 pa5-ns">
-<img id="cap" class="mw4 dib" src="cap.png" onclick="switchHat()">    
-</article>
+<body class="f6 f5-l mw6 center vh-100 sans-serif trl bg-light-yellow">
 
-<article class="cf ph3 ph5-ns pv3 pv5-ns">
+<article class="cf ph3 ph5-ns pv3 pv4-ns">
     <header class="fn fl-ns w-50-ns pr4-ns">
         <time class="f6 ttu tracked gray">now</time>
     </header>
@@ -67,15 +67,11 @@
     </div>
 </article>
 
-<article class="cf ph3 ph5-ns pv3 pv5-ns">
+<article class="cf ph3 ph5-ns pv3 pv4-ns">
     <header class="fn fl-ns w-50-ns pr4-ns">
         <time class="f6 ttu tracked gray">Previously</time>
     </header>
-
     <div class="fn fl-ns w-50-ns">
-        <p class="lh-copy measure mt4 mt0-ns"> 
-            Happily wore many hats as a digital freelancer:
-        </p>
         <p class="lh-copy measure mt4 mt0-ns">
             Designed and built <a href="https://piwalo.github.io/" class="link black bb b--dark-pink">Piwalo</a>.
         </p>
@@ -89,20 +85,9 @@
             Focused on the creation of digital media experiences at <a href="https://lit.ie/courses/LC517" class="link black bb b--dark-red">LIT-LSAD</a>.
         </p>
     </div>
-  
 </article>
   
-<script>
-var counter = 0,
-    hats = ["cap02.png", "cap03.png", "cap04.png", "cap.png"],
-    switchHat = function () {
-        document.getElementById("cap").src = hats[counter];
-        counter++;
-        if (counter >= hats.length) {
-            counter = 0;
-        }
-    };
-  
+<script>  
    window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
