@@ -1,158 +1,146 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
   <title> Lorcan Blake </title>
-  <meta name="description" content="Technical tutor at INCO Academy." />
-  <meta name="author" content="Lorcan Blake" />
-  <meta property="og:image" content="cap.png">
-  <meta property="og:url" content="http://lorcanblake.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#222222" />
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <link rel="shortcut icon" type="image/x-icon" href="cap.png" />
-  <link rel="apple-touch-icon" href="cap.png" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=IBM+Plex+Serif:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-  <style>
-a{background-color:transparent;}
-img{border-style:none;}
-a,h4,main,p{box-sizing:border-box;}
-img{max-width:100%;}
-.ba{border-style:solid;border-width:1px;}
-.br-100{border-radius:100%;}
-.bt {border-top-style: solid; border-top-width: 1px;}
-.b--black-05{border-color:rgba(0,0,0,.05);}
-.b--black-10 {border-color:rgba(0,0,0,.1);}
-.dib{display:inline-block;}
-.serif{font-family:times,serif;}
-.i{font-style:italic;}
-.h4{height:8rem;}
-.lh-copy{line-height:1.5;}
-.link{text-decoration:none;}
-.link,.link:active,.link:focus,.link:hover,.link:link,.link:visited{transition:color .15s ease-in;}
-.link:focus{outline:1px dotted currentColor;}
-.w4{width:8rem;}
-.mw6{max-width: 32rem;}
-.mw7{max-width: 48rem;}
-/* .fw1{font-weight:100;} */
-.tc{text-align: center;}
-.black-90{color:rgba(0,0,0,.9);}
-.black-70{color:rgba(0,0,0,.7);}
-.black-60{color:rgba(0,0,0,.6);}
-.pa2{padding:.5rem;}
-.pa3{padding:1rem;}
-.pt3{padding-top:1rem;}
-.pl3{padding-left:1rem;}
-.f4{font-size: 1.15rem;}
-.measure{max-width:30em;}
-.center{margin:0 auto;}
-.dim{opacity:1;}
-.dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in;}
-.dim:focus,.dim:hover{opacity:.5;}
-.dim:active{opacity:.8;transition:opacity .15s ease-out;}
-.serif{font-family: 'IBM Plex Serif', serif;}
-.sans-serif{font-family: 'IBM Plex Sans', sans-serif;}
-.justify{text-align: justify;}
-@media screen and (min-width:30em){
-.pa5-ns{padding:4rem;}
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+  <style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
 }
-.chat{ border-top-left-radius: 1rem; }
-  </style>
-</head>
 
-<body class="justify mw7 center f4 sans-serif black-90 bg-white">
-  <main class="pa3">
-<!--     <img src="" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Lorcan's face"> -->
-    <h1 class="serif tracked f4 fw1 pt3 lh-copy measure black-70">
-       Lorcan Blake <br />
-      <span class="black-60"> Dublin, IE </span>
-    </h1>
-    <section class="mw7 center">
-    <div class="pt3" class="ml-form-embed"
-  data-account="2780461:o4t1b4b4p9"
-  data-form="3347458:e2m5h1">
-</div>
-    </section>
-<!--     <h2 class="tc serif tracked f4 fw1 pt3 lh-copy measure black-70">Context</h2>
-     <p class="pl3 lh-copy measure">
-        I believe that innovation and technology are key to creating sustainable
-        social impact and to resolve some of the inequalitites that tech itself
-        has accelerated.
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
 
-        Today I work for
-        <a class="link black-90 dim" href="https://www.academy.inco-group.co/" target="_blank">INCO Academy</a>,
-        supporting people from all walks of life making their first steps into the industry.
-    </p>
-    <h2 class="serif tracked f4 fw1 pt3 lh-copy measure black-70">Mission</h2>
-    <p class="pl3 lh-copy measure">
-        In my current role I seek novel ways to use technology to advance
-        project-based learning, prioritise technical requirements, curate training
-        best practices and improve internal feedback loops.
-    </p>
-    <h2 class="serif tracked f4 fw1 pt3 lh-copy measure black-70">Actions</h2>
-    <p class="pl3 lh-copy measure">
-        As a facilitator, I am a peer learning advocate, passionate about enabling
-        those ‘Aha!’ moments for learners as they evolve into T-shaped tech professionals.
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+}
 
-        My time in the classroom allows me to garner insights from learner and
-        facilitator pain points, prioritise requirements and iterate curricula.
-    </p>
-    <h2 class="serif tracked f4 fw1 pt3 lh-copy measure black-70">Insights</h2>
-    <p class="pl3 lh-copy measure">
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
 
-    More about me:
-    <ul class="lh-copy measure">
-      <li>My favourite words are “What”, “Why”, “How and “When”
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+}
 
-      <li>I like being at the centre of things. Hungry to deepen my understanding of the business issues and challenges of the e-Learning sector, from strategic planning to execution</li>
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
 
-      <li>I’m equally as comfortable working within the large structure of a global company as I am working in a small, start-up environment</li>
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}
 
-      <li>As a result of my freelance consultancy and industry background I can adapt smoothly to almost any domain</li>
+.sans-serif{font-family:'Circular-Loom';}
+.bg-dark-green{background:#0e6142;}
 
-      <li>A rapid learner, I enjoy passing my knowledge on to others as actionable strategies and tactics. I have created and/or delivered workshops in Product Management, Product Owner (Agile Process), and Systems Thinking</li>
-        </ul>
+::selection {
+  background: #0c402cd1;
+}
+
+::-moz-selection {
+  background: #0c402cd1;
+}
+
+</style>
+
+<body class="w-100 sans-serif bg-dark-green white-80">
+<main>
+  <div data-name="component">
+  <article class="cf pa3 mw9 center f5 lh-copy">
+
+
+    <!-- <header class="mw7 center pa3-ns mb3 mb5-l">
+        <img src="https://d2w9rnfcy7mm78.cloudfront.net/9573578/large_398945b43c379820c53157e326a686ad.png?1605802134?bc=0" class="fl br-100 h3 w3 dib pa2 mr2 o-70" alt="avatar">
+      <h1 class="lh-title f4 mv3">Lorcan works at <a href="#" class="serif white-70 link">INCO Academy</a>, designing courses that lift students out of poverty.</h1>
+    </header> -->
+
+  <section class="fl w-100">
+
+    <div class="fl w-100 pa3-m pa4-l white-60 hover-white-80">
+    <h1 class="f5 b"> Now </h1>
+      <p class="measure">
+        Lorcan works at social impact and education start-up <a href="#" class="serif white-70 link">INCO Academy</a>, designing courses that lift students across the world out of poverty into careers they love.
       </p>
-      <h2 class="tracked f4 fw1 pt3 lh-copy measure black-70">Impact</h2>
-      <p class="pl3 lh-copy measure">
-          As a facilitator, I am a peer learning advocate, passionate about enabling
-          those ‘Aha!’ moments for learners as they evolve into T-shaped tech professionals.
-
-          My time in the classroom allows me to garner insights from learner and
-          facilitator pain points, prioritise requirements and iterate curricula.
+      <p class="measure">
+        Our core offerings span the tech and green sectors: Get Into Tech, Incode and Growth Marketing, as well as engineering learning environments to support
+        <a href="#" class="serif white-70 link">Google.org</a>'s existing course catalogue.
       </p>
- -->
 
-<!--     <img src="" class="mw6" /> -->
-  </main>
+      <!-- SVG Icons are from https://simpleicons.org -->
+      <footer class="pv4 ph2">
+        <a class="no-underline near-white inline-flex items-center ma2 tc bn b--dashed br-100 pa2" href="#" title="youtube">
+          <svg class="dib w1 h1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
+        </a>
+        <a class="no-underline near-white inline-flex items-center ma2 tc ba b--dashed br-100 pa2" href="https://www.linkedin.com/in/lorcanblake/" title="Lorcan's LinkedIn">
+          <svg class="dib h1 w1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+        </a>
+        <a class="no-underline near-white inline-flex items-center ma2 tc bn b--dashed br-100 pa2" href="#" title="Twitter">
+          <svg class="dib h1 w1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero"/></svg>
+        </a>
+      </footer>
 
-<!-- <section class="cf db fn w-100 pa3 pa5-ns bn b--black-10 black-90 bg-white">
-  <div class="pv3">
-  <a href="mailto:lorcanblake@hotmail.com" class="tc chat link pa3 ba black-90 b--black-40 f4 f3-ns mt4">Let's chat</a>
-</div>
-</section> -->
-<script>
-   window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-92779594-1");
-</script>
-  <!-- MailerLite Universal -->
-<script>
-(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+    </div>
 
-var ml_account = ml('accounts', '2780461', 'o4t1b4b4p9', 'load');
-</script>
-<!-- End MailerLite Universal -->
+    <div class="fl w-100 w-50-m w-33-l pa3-m pa4-l white-60 hover-white-80">
+    <h1 class="f5 b"> Done </h1>
+
+    <ul class="ml0 pl0 measure">
+        <li>Taught and mentored 300 students in 9 months across Ireland as they made first steps on their career journey into tech. </li>
+    </ul>
+      <p class="measure">
+        The project was sponsored by  <a href="#" class="serif white-70 link">Verizon Media</a>.
+      </p>
+
+    <ul class="ml0 pl0 measure">
+        <li>Founded <a href="#" class="serif white-70 link">Piwalo</a>, helping local businesses scale their supply and adapt to the on-demand economy. </li>
+    </ul>
+      <p class="measure">
+        The project was incubated by and later licensed to local government.
+      </p>
+
+      <ul class="ml0 pl0 measure">
+          <li>Product Engineer at <a href="#" class="serif white-70 link">Cartrawler</a>, one the largest B2B tech companies in Ireland. </li>
+      </ul>
+      <p class="measure">
+        Working mostly in front-end development.
+      </p>
+
+      <ul class="ml0 pl0 measure">
+          <li>Growth strategy consultant at a member branch of <a href="#" class="serif white-70 link">ILCU</a>, as they prepared to roll out digital banking nationwide. </li>
+      </ul>
+      <p class="measure">
+        Developed microsites and build localised marketing campaigns.
+      </p>
+
+    </div>
+
+    <div class="fl w-100 w-50-m w-33-l pa3-m pa4-l white-60 hover-white-80">
+    <h1 class="f5 b"> Up next </h1>
+
+    <ul class="ml0 pl0 measure">
+        <li><a href="#" class="serif white-70 link">P&sup2;</a> is a community for product managers in the education sector.</li>
+    </ul>
+    </div>
+    <div class="fl w-100 w-50-m w-33-l pa3-m pa4-l white-60 hover-white-80">
+      <h1 class="f5 b"> On the Horizon </h1>
+      <ul class="ml0 pl0 measure">
+          <li>MBA at <a href="#" class="serif white-70 link">Smurfit Business School</a>. </li>
+
+      </ul>
+      <p class="measure">
+        I've spent 1000s of hours analysing the most succesful companies in modern history. Hungry to deepen my understanding of the business challenges of the e-Learning sector.
+      </p>
+    </div>
+  </section>
+</article>
+  </div>
+</main>
 </body>
 </html>
